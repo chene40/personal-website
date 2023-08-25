@@ -1,3 +1,10 @@
+import Header from "@/components/header";
+
 export default function AboutMe() {
-  return <div>About Me</div>;
+  return (
+    <div>
+      <Header />
+      <span>About Me</span>
+    </div>
+  );
 }
