@@ -1,7 +1,7 @@
 "use client";
 
 import CarouselItem from "./carousel-item";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,13 +42,28 @@ export default function Carousel() {
     },
   ];
 
+  const autoTransition = () => {
+    let nextIndex = currentIndex + 1;
+    if (nextIndex === items.length) nextIndex = 0;
+    setCurrentIndex(nextIndex);
+  };
+
+  useEffect(() => {
+    const transitionInterval = setInterval(autoTransition, 5000);
+
+    return () => {
+      clearInterval(transitionInterval);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex]);
+
   return (
     <div className="h-96 w-full flex flex-col items-center overflow-hidden bg-cyan-200 relative">
       <div
         className="w-full h-full whitespace-nowrap inline-flex"
         style={{
           transform: `translate(-${currentIndex * 100}%)`,
-          transition: "transform 0.3s",
+          transition: "transform 1s",
           boxShadow: "0 5px 15px rgba(0, 0, 0, 0.05)",
         }}
       >
