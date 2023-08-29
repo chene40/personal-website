@@ -3,6 +3,8 @@
 import CarouselItem from "./carousel-item";
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
+
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -58,7 +60,7 @@ export default function Carousel() {
   }, [currentIndex]);
 
   return (
-    <div className="h-96 w-full flex flex-col items-center overflow-hidden bg-cyan-200 relative">
+    <div className="h-[75vh] w-full flex flex-col items-center overflow-hidden bg-cyan-200 relative">
       <div
         className="w-full h-full whitespace-nowrap inline-flex"
         style={{
@@ -77,13 +79,19 @@ export default function Carousel() {
           className="absolute left-8 top-1/2"
           onClick={() => updateIndex(currentIndex - 1)}
         >
-          {"<"}
+          <Image src={"/Arrow.svg"} alt="Left Arrow" width={30} height={30} />
         </button>
         <button
           className="absolute right-8 top-1/2"
           onClick={() => updateIndex(currentIndex + 1)}
         >
-          {">"}
+          <Image
+            src={"/Arrow.svg"}
+            alt="Right Arrow"
+            width={30}
+            height={30}
+            className="rotate-180"
+          />
         </button>
         {/* Replace button text with icon (make circle filled in when current index is selected) */}
         <div>
