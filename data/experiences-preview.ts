@@ -1,0 +1,88 @@
+const experiencesTop = [
+  {
+    company: "Esri",
+    position: "Software Engineer (Intern)",
+    description: "To be added",
+    techStack: [
+      "html",
+      "css",
+      "javascript",
+      "preact",
+      "ckeditor5",
+      "npm",
+      "node",
+    ],
+    icon: "/EsriLogo.svg",
+    altText: "Esri Logo",
+    link: "https://www.esri.com/en-us/about/about-esri/overview",
+  },
+  {
+    company: "McMaster University",
+    position: "Software Developer (Intern)",
+    description: "To be added",
+    techStack: [
+      "javascript",
+      "typescript",
+      "react",
+      "redux",
+      "tailwindcss",
+      "jest",
+      "node",
+      "yarn",
+    ],
+    icon: "/McMasterLogo.svg",
+    altText: "McMaster University Logo",
+    link: "https://electrification.mcmaster.ca/",
+  },
+  {
+    company: "Gunkii",
+    position: "Shopify Lead Software Developer (Intern)",
+    description: "To be added",
+    techStack: ["html", "css", "javascript", "sass", "shopify", "github"],
+    icon: "/GunkiiLogo.svg",
+    altText: "Gunkii Logo",
+    link: "https://gunkii.com/",
+  },
+];
+
+const experiencesBottom = [
+  {
+    company: "McMaster University",
+    position: "Teaching Assistant (Software Eng II)",
+    description: "To be added",
+    techStack: ["bash", "c"],
+    icon: "/McMasterLogo.svg",
+    altText: "McMaster University Logo",
+    link: "https://academiccalendars.romcmaster.ca/preview_course_nopop.php?catoid=53&coid=267962",
+  },
+  {
+    company: "Code Ninjas Markham",
+    position: "Roblox Development Camp Counsellor",
+    description: "To be added",
+    techStack: ["lua"],
+    icon: "/CodeNinjasLogo.svg",
+    altText: "Code Ninjas Logo",
+    link: "https://www.codeninjas.com/markham-on-ca",
+  },
+  {
+    company: "Twigoh",
+    position: "Full-Stack Software Engineer (Intern)",
+    description: "To be added",
+    techStack: [
+      "javascript",
+      "typescript",
+      "tailwindcss",
+      "next",
+      "redux",
+      "express",
+      "postgresql",
+      "swagger",
+      "figma",
+    ],
+    icon: "/TwigohLogo.svg",
+    altText: "Twigoh Logo",
+    link: "https://www.linkedin.com/company/designlab-twigoh/",
+  },
+];
+
+export { experiencesTop, experiencesBottom };

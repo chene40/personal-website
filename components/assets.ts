@@ -10,7 +10,7 @@ const icons: Record<string, string> = {
   tailwindcss:
     "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
   swagger:
-    "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
+    "https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png",
   firebase:
     "https://user-images.githubusercontent.com/25181517/189716855-2c69ca7a-5149-4647-936d-780610911353.png",
   figma:
@@ -44,6 +44,11 @@ const icons: Record<string, string> = {
   googlemaps:
     "https://ww1.freelogovectors.net/wp-content/uploads/2023/04/googlemaps-logo-freelogovectors.net_.png",
   vercel: "https://bitly.ws/TwAe",
+  shopify: "https://www.svgrepo.com/show/303503/shopify-logo.svg",
+  lua: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/1200px-Lua-Logo.svg.png",
+  ckeditor5: "https://www.drupal.org/files/project-images/ckeditor5.png",
+  preact:
+    "https://static-00.iconduck.com/assets.00/preact-icon-1773x2048-x7lxnupi.png",
 };
 
 export default icons;
