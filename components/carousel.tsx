@@ -11,8 +11,8 @@ export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const updateIndex = (newIndex: number) => {
-    if (newIndex < 0) setCurrentIndex(0);
-    else if (newIndex > items.length - 1) setCurrentIndex(items.length - 1);
+    if (newIndex < 0) setCurrentIndex(items.length - 1);
+    else if (newIndex > items.length - 1) setCurrentIndex(0);
     else setCurrentIndex(newIndex);
   };
 
