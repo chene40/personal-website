@@ -38,14 +38,13 @@ export default function Carousel() {
         style={{
           transform: `translate(-${currentIndex * 100}%)`,
           transition: "transform 1s",
-          boxShadow: "0 5px 15px rgba(0, 0, 0, 0.05)",
         }}
       >
         {items.map((item, index) => {
           return <CarouselItem item={item} key={index} />;
         })}
       </div>
-      <div>
+      <div className="z-10">
         {/* Replace button text with icon */}
         <button
           className="absolute left-8 top-1/2"
@@ -69,9 +68,13 @@ export default function Carousel() {
         <div>
           {items.map((item, index) => {
             return (
-              <span key={index} onClick={() => updateIndex(index)}>
-                O
-              </span>
+              <button
+                className="mr-2"
+                key={index}
+                onClick={() => updateIndex(index)}
+              >
+                {currentIndex === index ? "X" : "O"}
+              </button>
             );
           })}
         </div>
