@@ -1,17 +1,21 @@
 import Header from "@/components/header";
 import InterestCard from "@/components/interest-card";
+import interests from "@/data/interests-preview";
 
 export default function Interests() {
   return (
-    <div>
+    <div className="h-screen">
       <Header />
-      <div className="bg-cyan-200 w-full h-[75vh]">
-        <h2 className="p-8 h-10 text-2xl flex justify-center items-center">
+      <div className="bg-cyan-200 w-full h-full overflow-hidden">
+        <h2 className="p-8 text-2xl flex justify-center items-center">
           Check Out Some of My Interests Below!
         </h2>
-        <div className="flex justify-evenly h-full p-8">
-          <InterestCard />
-          <InterestCard />
+        <div className="h-full flex flex-col">
+          <div className="flex justify-evenly h-2/5 items-center mb-8 flex-wrap gap-y-12">
+            {interests.map((interest, index) => {
+              return <InterestCard item={interest} key={index} />;
+            })}
+          </div>
         </div>
       </div>
     </div>

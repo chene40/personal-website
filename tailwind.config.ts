@@ -15,6 +15,7 @@ const config: Config = {
       },
       spacing: {
         "75vh": "75vh",
+        "90vh": "90vh",
       },
     },
   },
