@@ -9,6 +9,7 @@ import Image from "next/image";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [stopAutoPlay, setStopAutoPlay] = useState(false);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) setCurrentIndex(items.length - 1);
@@ -23,13 +24,17 @@ export default function Carousel() {
   };
 
   useEffect(() => {
-    const transitionInterval = setInterval(autoTransition, 5000);
+    let transitionInterval: NodeJS.Timeout;
+
+    if (!stopAutoPlay) {
+      transitionInterval = setInterval(autoTransition, 5000);
+    }
 
     return () => {
       clearInterval(transitionInterval);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentIndex]);
+  }, [currentIndex, stopAutoPlay]);
 
   return (
     <div className="h-[75vh] w-full flex flex-col items-center overflow-hidden bg-cyan-200 relative">
@@ -78,6 +83,17 @@ export default function Carousel() {
             );
           })}
         </div>
+        <label className="absolute bottom-4 right-24 inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            onClick={() => setStopAutoPlay(!stopAutoPlay)}
+            className="sr-only peer"
+          />
+          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+          <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Pause Auto Transition
+          </span>
+        </label>
       </div>
     </div>
   );
