@@ -13,6 +13,8 @@ interface CarouselItemProps {
     projectLink: string;
     githubLink: string;
     demoVideo: string;
+    button1?: string;
+    button2?: string;
   };
 }
 
@@ -26,6 +28,8 @@ export default function CarouselItem({ item }: CarouselItemProps) {
     projectLink,
     githubLink,
     demoVideo,
+    button1,
+    button2,
   } = item;
   return (
     <div className="h-full w-full shrink-0 py-8 px-24 flex">
@@ -53,13 +57,16 @@ export default function CarouselItem({ item }: CarouselItemProps) {
           </div>
           <div className="h-1/4 flex justify-evenly">
             <button className="h-16 w-1/3 flex justify-center items-center bg-emerald-200 rounded-lg border-solid border-2 border-black">
-              <a href={projectLink} target="_blank">
-                Learn More About Project
+              <a
+                href={projectLink}
+                target={projectLink === "/projects" ? "_self" : "_blank"}
+              >
+                {button1 ? button1 : "Learn More About Project"}
               </a>
             </button>
             <button className="h-16 w-1/3 flex justify-center items-center bg-red-200 rounded-lg border-solid border-2 border-black">
               <a href={githubLink} target="_blank">
-                View the Source Code
+                {button2 ? button2 : "View the Source Code"}
               </a>
             </button>
           </div>

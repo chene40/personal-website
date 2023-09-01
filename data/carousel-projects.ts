@@ -23,6 +23,7 @@ const carouselProjects = [
       "https://github.com/chene40/Poolber/tree/main/D4/CarpoolProjectExpo",
     demoVideo:
       "https://user-images.githubusercontent.com/97481912/231580841-95c63689-3a37-42d5-b156-04d31131e41d.mp4",
+    button1: "Learn More About Poolber",
   },
   {
     title: "Azeliore Bot",
@@ -33,10 +34,11 @@ const carouselProjects = [
 		Shogun and Ayato's rerun banner). This project was built mostly using Node.js and made use of the discord.js API and
 		a fan-made genshin.js API. Personal information such as pity rates for each banner and account are stored in a MongoDB cluster.`,
     techStack: ["javascript", "node", "bash", "mongodb", "discord"],
-    projectLink: "https://github.com/chene40/azeliore-bot",
+    projectLink: "https://bit.ly/3KMXFqe",
     githubLink: "https://github.com/chene40/azeliore-bot",
     demoVideo:
       "https://user-images.githubusercontent.com/97481912/222251246-fa23087e-ea81-45d9-a9e0-afdf269ea79c.mp4",
+    button1: "Use the Discord Bot",
   },
   {
     title: "Tenzies",
@@ -50,6 +52,7 @@ const carouselProjects = [
     githubLink: "https://github.com/chene40/Tenzies",
     demoVideo:
       "https://github.com/chene40/Tenzies/assets/97481912/20395cd0-009d-4a2e-a6d4-f64881272a29",
+    button1: "Play Tenzies",
   },
   {
     title: "Personal Website",
@@ -68,10 +71,11 @@ const carouselProjects = [
       "tailwindcss",
       "vercel",
     ],
-    projectLink: "/",
+    projectLink: "/projects",
     githubLink: "https://github.com/chene40/personal-website",
     demoVideo:
       "https://github.com/chene40/Tenzies/assets/97481912/20395cd0-009d-4a2e-a6d4-f64881272a29",
+    button1: "Learn More About Projects",
   },
 ];
 
