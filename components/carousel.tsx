@@ -70,16 +70,25 @@ export default function Carousel() {
           />
         </button>
         {/* Replace button text with icon (make circle filled in when current index is selected) */}
-        <div>
+        <div className="flex">
           {items.map((item, index) => {
             return (
-              <button
-                className="mr-2"
-                key={index}
-                onClick={() => updateIndex(index)}
-              >
-                {currentIndex === index ? "X" : "O"}
-              </button>
+              //   <button
+              //     className="mr-2"
+              //     key={index}
+              //     onClick={() => updateIndex(index)}
+              //   >
+              //     {currentIndex === index ? "X" : "O"}
+              //   </button>
+              <div key={index} className="flex items-center mb-4 mr-4">
+                <input
+                  type="radio"
+                  name="default-radio"
+                  className="w-4 h-4"
+                  onClick={() => updateIndex(index)}
+                  checked={index === currentIndex ? true : false}
+                />
+              </div>
             );
           })}
         </div>
