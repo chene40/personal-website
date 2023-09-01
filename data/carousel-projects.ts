@@ -4,9 +4,12 @@ const carouselProjects = [
     imageSrc: "/PoolberIcon.svg",
     imageAlt: "Poolber Icon",
     description: `A user-oriented carpooling app that encourages riders to share riders together. This not only help reduce 
-		the gaseous emissions and traffic congestions, but it also helps you cut down the cost of your ride while 
+		the gaseous emissions and traffic congestions caused by cars, but it also helps you cut down the cost of your ride while 
 		also meeting new people! This app uses the Google Maps API in order to set up the trip route and calculate ride 
-		information such as the order of pickup, ride fare, distance, time, etc.`,
+		information such as the order of pickup, ride fare, distance, time, etc. All user and ride information is stored via Firebase.`,
+    additionalInfo: `If you wish to modify/extend this app, make sure to replace the Firebase and Google Maps API key to get it properly
+	working. Further details about the system design, case/state diagrams and requirements can be found within the D[1-3] subdirectories.
+	The D4/CarpoolProjectExpo hosts the implementation specifics of the app.`,
     techStack: [
       "html",
       "css",
@@ -33,6 +36,9 @@ const carouselProjects = [
 	  for free and test their luck. The banners available to wish upon are those on the second phase of version 3.3 (Raiden 
 		Shogun and Ayato's rerun banner). This project was built mostly using Node.js and made use of the discord.js API and
 		a fan-made genshin.js API. Personal information such as pity rates for each banner and account are stored in a MongoDB cluster.`,
+    additionalInfo: `This bot has not been updated since the version 3.3 update. Any changes thereafter the 3.3 patch update regarding
+	how the pity system works is not explored further. Disclaimer: This bot's statistical rates are based on models of player's wishes 
+	and is in no shape or form, indicative of the underlying pity system behind Genshin. Use at your own discretion.`,
     techStack: ["javascript", "node", "bash", "mongodb", "discord"],
     projectLink: "https://bit.ly/3KMXFqe",
     githubLink: "https://github.com/chene40/azeliore-bot",
@@ -44,9 +50,12 @@ const carouselProjects = [
     title: "Tenzies",
     imageSrc: "/Dice.svg",
     imageAlt: "An image of a dice",
-    description: `A recreation of the classical game Tenzies. Roll until all the dice are the same and click each die to freeze
-	  its current value between rolls. All relevant data pertaining to the game are stored via local storage and you can check if 
-	  you've beaten your old record. Give it a try and see how fast you can make all 10 dies have the same face!`,
+    description: `A recreation of the classical game, Tenzies. Roll until all die are the same and click each die to freeze
+	  its current value between rolls. Try to beat your record and see if you can achieve a faster time than before.
+	  All relevant data pertaining to the game are stored via local storage and you can check if 
+	  you've beaten your old record via the "Stats" page.`,
+    additionalInfo: `This project was created as an initial dive into the React/Node ecosystem and was deployed via Vercel. For additional 
+	information regarding implementation specifics, click the "View the Source Code" button below.`,
     techStack: ["html", "css", "javascript", "react", "vercel"],
     projectLink: "https://tenzies-chene40-mcmasterca.vercel.app/",
     githubLink: "https://github.com/chene40/Tenzies",
@@ -59,8 +68,8 @@ const carouselProjects = [
     imageSrc: "/WebsiteIcon.svg",
     imageAlt: "An image of a dice",
     description: `The website that you're currently looking at right now is also a personal project that I've created to get to 
-	  know about me a little more. In here, you will find my work, my experiences, and some of my interests. Feel free to take a browse
-	  around and see if anything piques your interest!`,
+	  know me better. In here, you will find my some of the work I've done, my experiences with software engineering/development, 
+	  and some of my interests. Feel free to take a browse around and see if anything piques your interest!`,
     techStack: [
       "html",
       "css",

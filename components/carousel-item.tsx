@@ -9,6 +9,7 @@ interface CarouselItemProps {
     imageSrc: string;
     imageAlt: string;
     description: string;
+    additionalInfo?: string;
     techStack: string[];
     projectLink: string;
     githubLink: string;
@@ -24,6 +25,7 @@ export default function CarouselItem({ item }: CarouselItemProps) {
     imageSrc,
     imageAlt,
     description,
+    additionalInfo,
     techStack,
     projectLink,
     githubLink,
@@ -40,12 +42,23 @@ export default function CarouselItem({ item }: CarouselItemProps) {
         </div>
         <hr className="bg-black h-0.5" />
         <div className="h-full flex flex-col py-8">
-          <p className="h-1/2 whitespace-normal text-lg">{description}</p>
-          <div className="h-1/4 flex items-center">
+          <p
+            className={`${
+              additionalInfo ? "h-1/4" : "h-1/2"
+            } whitespace-normal text-lg`}
+          >
+            {description}
+          </p>
+          {additionalInfo && (
+            <p className="h-1/4 pt-6 whitespace-normal text-lg">
+              {additionalInfo}
+            </p>
+          )}
+          <div className="h-1/4 flex items-center justify-center">
             {techStack.map((item: string, index: number) => {
               return (
                 <Image
-                  className="mr-2"
+                  className="mx-4"
                   src={icons[item]}
                   key={index}
                   alt={item}
