@@ -21,6 +21,8 @@ const carouselProjects = [
     projectLink: "https://github.com/chene40/Poolber/tree/main",
     githubLink:
       "https://github.com/chene40/Poolber/tree/main/D4/CarpoolProjectExpo",
+    demoVideo:
+      "https://user-images.githubusercontent.com/97481912/231580841-95c63689-3a37-42d5-b156-04d31131e41d.mp4",
   },
   {
     title: "Azeliore Bot",
@@ -33,6 +35,8 @@ const carouselProjects = [
     techStack: ["javascript", "node", "bash", "mongodb", "discord"],
     projectLink: "https://github.com/chene40/azeliore-bot",
     githubLink: "https://github.com/chene40/azeliore-bot",
+    demoVideo:
+      "https://user-images.githubusercontent.com/97481912/222251246-fa23087e-ea81-45d9-a9e0-afdf269ea79c.mp4",
   },
   {
     title: "Tenzies",
@@ -44,6 +48,8 @@ const carouselProjects = [
     techStack: ["html", "css", "javascript", "react", "vercel"],
     projectLink: "https://tenzies-chene40-mcmasterca.vercel.app/",
     githubLink: "https://github.com/chene40/Tenzies",
+    demoVideo:
+      "https://github.com/chene40/Tenzies/assets/97481912/20395cd0-009d-4a2e-a6d4-f64881272a29",
   },
   {
     title: "Personal Website",
@@ -62,8 +68,10 @@ const carouselProjects = [
       "tailwindcss",
       "vercel",
     ],
-    projectLink: "https://tenzies-chene40-mcmasterca.vercel.app/",
-    githubLink: "https://github.com/chene40/Tenzies",
+    projectLink: "/",
+    githubLink: "https://github.com/chene40/personal-website",
+    demoVideo:
+      "https://github.com/chene40/Tenzies/assets/97481912/20395cd0-009d-4a2e-a6d4-f64881272a29",
   },
 ];
 
