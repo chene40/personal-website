@@ -1,17 +1,40 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 This was a project that I've been pushing off for over a year oops, but hopefully I have some inspiration to finally kick start this :')
-## Features To Be Implemented
 
-- [ ] Home Page
+## Features/Pages To Be Implemented
+- [X] Home Page
+  - [X] Carousel Preview of Projects
+  - [X] Experience Cards (Preview)
+- [X] NavBar (Home Icon, Projects, Experiences, Interests, Contact)
+    - [X] Resume Copy
+    - [ ] Add in Contact Methods
+- [ ] Footer
 - [ ] About Me Page (Tech Interests + Education + Ambitions) 
-- [ ] NavBar (Home Icon, Projects, Experiences, Interests, Contact)
-- [ ] Carousel Preview of Projects
-- [ ] Experience Cards
-- [ ] Personal Interests Page + Additionals
-- [ ] Tech Stack
+- [ ] Projects Page (Detailed)
+- [ ] Experience Page (Detailed)
+- [ ] Interests Page
+    - [X] Preview
+    - [ ] Detailed
 
-## Additional Features
+## Refinements
+- [X] Type Declaration and Consistency
+- [ ] Sticky Header
+- [ ] Dynamic Routing to Specific Cards (Projects/Experiences)
+- [ ] Vertical Timeline Progression (Experiences) + Fade Animations
+- [ ] About Me Page RoadMap (Non-linear?)
+- [ ] UI Consistency + Explore Styling
+
+## Page Data to Be Populated
+- [ ] About Me
+- [X] Carousel Preview Projects
+- [ ] Projects Detailed
+- [X] Experiences Preview
+- [ ] Experiences Detailed
+- [X] Interests Preview
+- [ ] Interests Detailed
+
+## Additional Features/Extras
 - [ ] Transitions and Animations
 - [ ] Electro Cursor Navigation Integration
-- [ ] 3D Model (Key Interests)
+- [ ] 3D Model (Keyboard Interests)
