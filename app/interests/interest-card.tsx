@@ -1,5 +1,7 @@
+// Library/Module Imports
 import Image from "next/image";
 
+// Project Imports
 import { InterestCardProps } from "@/types/type";
 
 export default function InterestCard({ interestData }: InterestCardProps) {

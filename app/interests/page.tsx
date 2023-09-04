@@ -1,3 +1,4 @@
+// Project Imports
 import Header from "@/components/header";
 import InterestCard from "@/app/interests/interest-card";
 import interests from "@/data/interests-preview";

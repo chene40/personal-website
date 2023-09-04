@@ -1,4 +1,7 @@
+// Library/Module Imports
 import Image from "next/image";
+
+// Project Imports
 import { ExperienceCardProps } from "@/types/type";
 
 export default function ExperienceCard({

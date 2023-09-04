@@ -1,4 +1,7 @@
+// Library/Module Imports
 import Link from "next/link";
+
+// Relative/Local Imports
 import ExperienceCard from "./experience-card-preview";
 
 import { experiencesTop, experiencesBottom } from "@/data/experiences-preview";

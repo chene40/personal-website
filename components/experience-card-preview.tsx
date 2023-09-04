@@ -4,7 +4,7 @@ import Image from "next/image";
 // Project Imports
 import { ExperienceCardPreviewProps } from "@/types/type";
 
-import icons from "./assets";
+import icons from "@/data/assets";
 
 export default function ExperienceCard({
   experience,

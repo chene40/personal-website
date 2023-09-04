@@ -1,7 +1,10 @@
-import React from "react";
+// Library/Module Imports
 import Image from "next/image";
 
-import icons from "./assets";
+// Relative/Local Imports
+import icons from "@/data/assets";
+
+// Project Imports
 import { CarouselItemProps } from "@/types/type";
 
 export default function CarouselItem({ carouselItem }: CarouselItemProps) {

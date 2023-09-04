@@ -1,11 +1,14 @@
 "use client";
 
-import CarouselItem from "./carousel-item";
+// Library/Module Imports
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
+// Project Imports
 import items from "@/data/carousel-projects";
 
-import Image from "next/image";
+// Relative/Local Imports
+import CarouselItem from "./carousel-item";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
