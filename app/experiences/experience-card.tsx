@@ -38,7 +38,9 @@ export default function ExperienceCard({
       <div className="bg-white h-full w-1/3 p-8 rounded-lg">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-medium">{companyName}</h3>
-          <Image src={imageUrl} alt={imageAlt} width={100} height={20} />
+          <a target="_blank" href={companyLink}>
+            <Image src={imageUrl} alt={imageAlt} width={100} height={20} />
+          </a>
         </div>
         <div className="flex flex-col gap-y-4">
           <h5 className="italic">{jobTitle}</h5>
