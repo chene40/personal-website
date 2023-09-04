@@ -7,8 +7,8 @@ export default function Interests() {
   return (
     <div className="h-screen">
       <Header />
-      <div className="bg-cyan-200 w-full h-full overflow-hidden">
-        <h2 className="p-8 text-2xl flex justify-center items-center">
+      <div className="bg-gray-900 w-full h-full overflow-hidden">
+        <h2 className="p-8 text-3xl flex justify-center items-center text-white font-medium">
           Check Out Some of My Interests Below!
         </h2>
         <div className="h-full flex flex-col">
