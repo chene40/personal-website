@@ -46,7 +46,7 @@ export default function Carousel() {
         }}
       >
         {items.map((item, index) => {
-          return <CarouselItem item={item} key={index} />;
+          return <CarouselItem carouselItem={item} key={index} />;
         })}
       </div>
       <div className="z-10">

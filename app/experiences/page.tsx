@@ -11,10 +11,10 @@ export default function Experiences() {
           Experiences
         </h3>
         <div className="flex flex-col gap-y-10">
-          {experiencesFull.map((item, index) => {
+          {experiencesFull.map((experience, index) => {
             return (
               <ExperienceCard
-                item={item}
+                experience={experience}
                 key={index}
                 position={index % 2 == 0 ? "left" : "right"}
               />

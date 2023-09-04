@@ -2,28 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 import icons from "./assets";
+import { CarouselItemProps } from "@/types/type";
 
-interface CarouselItemProps {
-  item: {
-    title: string;
-    imageSrc: string;
-    imageAlt: string;
-    description: string;
-    additionalInfo?: string;
-    techStack: string[];
-    projectLink: string;
-    githubLink: string;
-    demoVideo: string;
-    button1?: string;
-    button2?: string;
-  };
-}
-
-export default function CarouselItem({ item }: CarouselItemProps) {
+export default function CarouselItem({ carouselItem }: CarouselItemProps) {
   const {
     title,
-    imageSrc,
-    imageAlt,
+    imageData,
     description,
     additionalInfo,
     techStack,
@@ -32,13 +16,16 @@ export default function CarouselItem({ item }: CarouselItemProps) {
     demoVideo,
     button1,
     button2,
-  } = item;
+  } = carouselItem;
+
+  const { url, alt } = imageData;
+
   return (
     <div className="h-full w-full shrink-0 py-8 px-24 flex">
       <div className="w-1/2 h-full">
         <div className="flex h-24 items-center justify-between">
           <h3 className="text-3xl font-semibold">{title}</h3>
-          <Image src={imageSrc} alt={imageAlt} width={100} height={100} />
+          <Image src={url} alt={alt} width={100} height={100} />
         </div>
         <hr className="bg-black h-0.5" />
         <div className="h-full flex flex-col py-8">

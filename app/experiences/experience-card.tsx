@@ -1,33 +1,13 @@
 import Image from "next/image";
-
-interface ExperienceCardProps {
-  item: {
-    companyName: string;
-    jobTitle: string;
-    description: string;
-    tasks: string[];
-    companyLink: string;
-    imageUrl: string;
-    imageAlt: string;
-    date: string;
-  };
-  position: string;
-}
+import { ExperienceCardProps } from "@/types/type";
 
 export default function ExperienceCard({
-  item,
+  experience,
   position,
 }: ExperienceCardProps) {
-  const {
-    companyName,
-    jobTitle,
-    description,
-    tasks,
-    companyLink,
-    imageUrl,
-    imageAlt,
-    date,
-  } = item;
+  const { companyData, tasks, imageData } = experience;
+  const { company, jobTitle, description, date, companyLink } = companyData;
+  const { url, alt } = imageData;
 
   return (
     <div className="h-full flex justify-center gap-x-8">
@@ -37,9 +17,9 @@ export default function ExperienceCard({
       )}
       <div className="bg-white h-full w-1/3 p-8 rounded-lg">
         <div className="flex justify-between items-center">
-          <h3 className="text-2xl font-medium">{companyName}</h3>
+          <h3 className="text-2xl font-medium">{company}</h3>
           <a target="_blank" href={companyLink}>
-            <Image src={imageUrl} alt={imageAlt} width={100} height={20} />
+            <Image src={url} alt={alt} width={100} height={20} />
           </a>
         </div>
         <div className="flex flex-col gap-y-4">

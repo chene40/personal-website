@@ -1,17 +1,11 @@
 import Image from "next/image";
 
-interface InterestCardProps {
-  item: {
-    interest: string;
-    description: string;
-    imageSrc: string;
-    imageAlt: string;
-    redirectPath: string;
-  };
-}
+import { InterestCardProps } from "@/types/type";
 
-export default function InterestCard({ item }: InterestCardProps) {
-  const { interest, description, imageSrc, imageAlt, redirectPath } = item;
+export default function InterestCard({ interestData }: InterestCardProps) {
+  const { interest, description, imageData, redirectPath } = interestData;
+  const { url, alt } = imageData;
+
   return (
     <div className="bg-red-200 flex flex-col justify-between w-2/5 h-full rounded-3xl">
       <div className="bg-emerald-100 h-1/6 flex rounded-t-3xl items-center px-4">
@@ -22,10 +16,10 @@ export default function InterestCard({ item }: InterestCardProps) {
         <div className="h-full w-1/3 h-full flex justify-center">
           <Image
             className="rounded-xl"
-            src={imageSrc}
+            src={url}
             width={320}
             height={100}
-            alt={imageAlt}
+            alt={alt}
           />
         </div>
       </div>

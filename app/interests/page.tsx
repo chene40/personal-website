@@ -13,7 +13,7 @@ export default function Interests() {
         <div className="h-full flex flex-col">
           <div className="flex justify-evenly h-2/5 items-center mb-8 flex-wrap gap-y-12">
             {interests.map((interest, index) => {
-              return <InterestCard item={interest} key={index} />;
+              return <InterestCard interestData={interest} key={index} />;
             })}
           </div>
         </div>
