@@ -1,7 +1,7 @@
 import Image from "next/image";
 import icons from "./assets";
 
-interface ExperienceCardProps {
+interface ExperienceCardPreviewProps {
   experience: {
     company: string;
     position: string;
@@ -13,7 +13,9 @@ interface ExperienceCardProps {
   };
 }
 
-export default function ExperienceCard({ experience }: ExperienceCardProps) {
+export default function ExperienceCard({
+  experience,
+}: ExperienceCardPreviewProps) {
   const { company, position, description, techStack, icon, altText, link } =
     experience;
   return (

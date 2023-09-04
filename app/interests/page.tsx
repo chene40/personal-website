@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import InterestCard from "@/components/interest-card";
+import InterestCard from "@/app/interests/interest-card";
 import interests from "@/data/interests-preview";
 
 export default function Interests() {

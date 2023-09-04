@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ExperienceCard from "./experience-card";
+import ExperienceCard from "./experience-card-preview";
 
 import { experiencesTop, experiencesBottom } from "@/data/experiences-preview";
 
