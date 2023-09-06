@@ -22,7 +22,7 @@ const experiencesFull = [
       date: "2023",
     },
     imageData: {
-      url: "/EsriLogo.svg",
+      url: "/company/EsriLogo.svg",
       alt: "Esri Logo",
     },
     tasks: [
@@ -57,7 +57,7 @@ const experiencesFull = [
       date: "2022",
     },
     imageData: {
-      url: "/McMasterLogo.svg",
+      url: "/company/McMasterLogo.svg",
       alt: "McMaster University's Logo",
     },
     tasks: [
@@ -82,7 +82,7 @@ const experiencesFull = [
       date: "2022",
     },
     imageData: {
-      url: "/GunkiiLogo.svg",
+      url: "/company/GunkiiLogo.svg",
       alt: "Gunkii's Logo",
     },
     tasks: [
@@ -108,7 +108,7 @@ const experiencesFull = [
       date: "2022",
     },
     imageData: {
-      url: "/McMasterLogo.svg",
+      url: "/company/McMasterLogo.svg",
       alt: "McMaster University's Logo",
     },
     tasks: [
@@ -134,7 +134,7 @@ const experiencesFull = [
       date: "2022",
     },
     imageData: {
-      url: "/CodeNinjasLogo.svg",
+      url: "/company/CodeNinjasLogo.svg",
       alt: "Code Ninjas' Logo",
     },
     tasks: [
@@ -170,7 +170,7 @@ const experiencesFull = [
       date: "2022",
     },
     imageData: {
-      url: "/TwigohLogo.svg",
+      url: "/company/TwigohLogo.svg",
       alt: "Twigoh's Logo",
     },
     tasks: [

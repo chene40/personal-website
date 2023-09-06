@@ -7,7 +7,7 @@ const interests = [
 	say you built your own keyboard which suits you specifically! Click the "Learn More" button to view my keyboard collection and see the
 	specifics details of each build ~`,
     imageData: {
-      url: "/Qk75.jpg",
+      url: "/interests/Qk75.jpg",
       alt: "An image of one of my favorite custom built mechanical keyboard. The milky white QK75 with osume's dalgona keycap + novelty set.",
     },
     redirectPath: "/interests/keyboards",
@@ -19,7 +19,7 @@ const interests = [
 	photography haha - shaky hands and being color deficient does not really help ☹️. Editing images isn't my forte either sadly... Nonetheless,
 	exploring and snap shotting each moment in time places my mind in a state of tranquility. My personal favorite styles are portraits and bokehs!`,
     imageData: {
-      url: "/Camera.jpg",
+      url: "/interests/Camera.jpg",
       alt: "An image of a DSLR (Canon EOS Rebel T8i) that I use to take pictures when I go exploring.",
     },
     redirectPath: "/interests/photography",
@@ -31,7 +31,7 @@ const interests = [
 	like aesthetic builds that can handle intensive processes. Something that I've been trying to get better at is managing my cables and overall
 	front-facing design. Click the "Learn More" button to view the specifics of each PC build and some of my thoughts when building them ~`,
     imageData: {
-      url: "/PC.jpg",
+      url: "/interests/PC.jpg",
       alt: "The inner parts of my PC build featuring the AIO/Radiator, motherboard, memory, GPU and some messy cables.",
     },
     redirectPath: "/interests/pc",
@@ -43,7 +43,7 @@ const interests = [
 	(action-rpg, ended country-life, turn-based strategy) - game that have a progressive storyline! I also find that reading and watching films
 	helps a lot in disconnecting from the world and allow myself to gain inner peace so if you have suggestions, I'd love to hear them!`,
     imageData: {
-      url: "/HonkaiStarRail.jpg",
+      url: "/interests/HonkaiStarRail.jpg",
       alt: "Honkai Star Rail, one of HoyoVerse's top grossing game.",
     },
     redirectPath: "/interests/alternatives",

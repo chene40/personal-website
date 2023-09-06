@@ -2,7 +2,7 @@ const carouselProjects = [
   {
     title: "Poolber",
     imageData: {
-      url: "/PoolberIcon.svg",
+      url: "/projects/PoolberIcon.svg",
       alt: "Poolber Icon",
     },
     description: `A user-oriented carpooling app that encourages riders to share riders together. This not only help reduce 
@@ -33,7 +33,7 @@ const carouselProjects = [
   {
     title: "Azeliore Bot",
     imageData: {
-      url: "/GenshinIcon.svg",
+      url: "/projects/GenshinIcon.svg",
       alt: "Genshin Impact Icon",
     },
     description: `A discord bot to simulate the Genshin Impact banner system backed with statistical models so users can pull
@@ -53,7 +53,7 @@ const carouselProjects = [
   {
     title: "Tenzies",
     imageData: {
-      url: "/Dice.svg",
+      url: "/projects/Dice.svg",
       alt: "An image of a dice",
     },
     description: `A recreation of the classical game, Tenzies. Roll until all die are the same and click each die to freeze
@@ -72,7 +72,7 @@ const carouselProjects = [
   {
     title: "Personal Website",
     imageData: {
-      url: "/WebsiteIcon.svg",
+      url: "/projects/WebsiteIcon.svg",
       alt: "An image of a dice",
     },
     description: `The website that you're currently looking at right now is also a personal project that I've created to get to 
