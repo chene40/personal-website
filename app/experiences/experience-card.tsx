@@ -1,5 +1,6 @@
 // Library/Module Imports
 import Image from "next/image";
+import Link from "next/link";
 
 // Project Imports
 import { ExperienceCardProps } from "@/types/type";
@@ -21,9 +22,9 @@ export default function ExperienceCard({
       <div className="bg-white h-full w-1/3 p-8 rounded-lg">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-medium">{company}</h3>
-          <a target="_blank" href={companyLink}>
+          <Link target="_blank" href={companyLink}>
             <Image src={url} alt={alt} width={100} height={20} />
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-y-4">
           <h5 className="italic">{jobTitle}</h5>
@@ -39,9 +40,9 @@ export default function ExperienceCard({
         </div>
         <div className="flex justify-center">
           <button className="bg-blue-200 w-2/5 h-12 rounded-xl">
-            <a target="_blank" href={companyLink}>
+            <Link target="_blank" href={companyLink}>
               Learn More!
-            </a>
+            </Link>
           </button>
         </div>
       </div>

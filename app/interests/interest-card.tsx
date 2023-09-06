@@ -1,5 +1,6 @@
 // Library/Module Imports
 import Image from "next/image";
+import Link from "next/link";
 
 // Project Imports
 import { InterestCardProps } from "@/types/type";
@@ -15,7 +16,7 @@ export default function InterestCard({ interestData }: InterestCardProps) {
       </div>
       <div className="flex justify-between h-2/3 p-4">
         <p className="whitespace-normal w-2/3">{description}</p>
-        <div className="h-full w-1/3 h-full flex justify-center">
+        <div className="h-full w-1/3 flex justify-center">
           <Image
             className="rounded-xl"
             src={url}
@@ -27,7 +28,7 @@ export default function InterestCard({ interestData }: InterestCardProps) {
       </div>
       <button className="bg-blue-100 h-1/6 rounded-b-3xl">
         {/* Redirect to the next page on the website e.g. /interests/interestA */}
-        <a href={redirectPath}>Learn More</a>
+        <Link href={redirectPath}>Learn More</Link>
       </button>
     </div>
   );

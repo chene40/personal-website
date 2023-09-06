@@ -1,5 +1,6 @@
 // Library/Module Imports
 import Image from "next/image";
+import Link from "next/link";
 
 // Relative/Local Imports
 import icons from "@/data/assets";
@@ -60,17 +61,17 @@ export default function CarouselItem({ carouselItem }: CarouselItemProps) {
           </div>
           <div className="h-1/4 flex justify-evenly">
             <button className="h-16 w-1/3 flex justify-center items-center bg-emerald-200 rounded-lg border-solid border-2 border-sky-300">
-              <a
+              <Link
                 href={projectLink}
                 target={projectLink === "/projects" ? "_self" : "_blank"}
               >
                 {button1 ? button1 : "Learn More About Project"}
-              </a>
+              </Link>
             </button>
             <button className="h-16 w-1/3 flex justify-center items-center bg-red-200 rounded-lg border-solid border-2 border-sky-300">
-              <a href={githubLink} target="_blank">
+              <Link href={githubLink} target="_blank">
                 {button2 ? button2 : "View the Source Code"}
-              </a>
+              </Link>
             </button>
           </div>
         </div>

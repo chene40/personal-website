@@ -1,5 +1,6 @@
 import { ImageData } from "@/types/type";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ContactType {
   socialName: string;
@@ -47,7 +48,7 @@ export default function Footer() {
               const { url, alt } = imageData;
               return (
                 <li key={index}>
-                  <a
+                  <Link
                     href={socialLink}
                     target="_blank"
                     className="flex mt-2 w-fit"
@@ -60,14 +61,14 @@ export default function Footer() {
                       width={20}
                       className="ml-2"
                     />
-                  </a>
+                  </Link>
                 </li>
               );
             })}
           </ul>
         </div>
         <div className="w-1/3 flex items-center justify-center">
-          <a href="#top">Jump Back to Top</a>
+          <Link href="#top">Jump Back to Top</Link>
         </div>
       </div>
     </div>

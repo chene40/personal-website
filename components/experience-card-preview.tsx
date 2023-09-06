@@ -23,13 +23,13 @@ export default function ExperienceCardPreview({
           <p>{company}</p>
           <p className="text-sm">{jobTitle}</p>
         </div>
-        <a
+        <Link
           target="_blank"
           href={companyLink}
           className="w-1/3 flex justify-center"
         >
           <Image src={url} alt={alt} width={90} height={80} />
-        </a>
+        </Link>
       </div>
       <p className="h-2/5 p-4 text-white">{description}</p>
       <div className="h-1/5 flex items-center justify-center bg-fuchsia-200">

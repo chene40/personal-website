@@ -12,9 +12,9 @@ export default function Header() {
           <Link href="/projects">Projects</Link>
           <Link href="/experiences">Experiences</Link>
           <Link href="/interests">Interests</Link>
-          <a href="/Eric_Chen_Resume.pdf" download="Eric_Chen_Resume.pdf">
+          <Link href="/Eric_Chen_Resume.pdf" download="Eric_Chen_Resume.pdf">
             Resume Copy
-          </a>
+          </Link>
         </header>
       </div>
     </div>
