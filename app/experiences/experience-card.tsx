@@ -8,12 +8,12 @@ export default function ExperienceCard({
   experience,
   position,
 }: ExperienceCardProps) {
-  const { companyData, tasks, imageData } = experience;
+  const { companyData, tasks, imageData, idTag } = experience;
   const { company, jobTitle, description, date, companyLink } = companyData;
   const { url, alt } = imageData;
 
   return (
-    <div className="h-full flex justify-center gap-x-8">
+    <div className="h-full flex justify-center gap-x-8" id={idTag}>
       {/* Fix this so that the dates are in a timeline later */}
       {position === "right" && (
         <p className="w-1/3 text-white text-end ">{date}</p>

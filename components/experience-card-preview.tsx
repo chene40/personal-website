@@ -1,15 +1,16 @@
 // Library/Module Imports
 import Image from "next/image";
+import Link from "next/link";
 
 // Project Imports
 import { ExperienceCardPreviewProps } from "@/types/type";
 
 import icons from "@/data/assets";
 
-export default function ExperienceCard({
+export default function ExperienceCardPreview({
   experience,
 }: ExperienceCardPreviewProps) {
-  const { companyData, imageData } = experience;
+  const { companyData, imageData, idTag } = experience;
 
   const { company, jobTitle, description, techStack, companyLink } =
     companyData;
@@ -45,9 +46,12 @@ export default function ExperienceCard({
           );
         })}
       </div>
-      <button className="flex w-full h-1/5 rounded-b-3xl justify-center items-center bg-violet-400 text-white font-semibold">
+      <Link
+        href={`/experiences/#${idTag}`}
+        className="flex w-full h-1/5 rounded-b-3xl justify-center items-center bg-violet-400 text-white font-semibold"
+      >
         Learn More About This Position
-      </button>
+      </Link>
     </div>
   );
 }

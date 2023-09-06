@@ -22,6 +22,7 @@ const experiencesTop = [
       url: "/EsriLogo.svg",
       alt: "Esri Logo",
     },
+    idTag: "Esri",
   },
   {
     companyData: {
@@ -46,6 +47,7 @@ const experiencesTop = [
       url: "/McMasterLogo.svg",
       alt: "McMaster University Logo",
     },
+    idTag: "Cubic",
   },
   {
     companyData: {
@@ -62,6 +64,7 @@ const experiencesTop = [
       url: "/GunkiiLogo.svg",
       alt: "Gunkii Logo",
     },
+    idTag: "Gunkii",
   },
 ];
 
@@ -81,6 +84,7 @@ const experiencesBottom = [
       url: "/McMasterLogo.svg",
       alt: "McMaster University Logo",
     },
+    idTag: "SFWRENG2XC3",
   },
   {
     companyData: {
@@ -96,6 +100,7 @@ const experiencesBottom = [
       url: "/CodeNinjasLogo.svg",
       alt: "Code Ninjas Logo",
     },
+    idTag: "CodeNinjasMarkham",
   },
   {
     companyData: {
@@ -121,6 +126,7 @@ const experiencesBottom = [
       url: "/TwigohLogo.svg",
       alt: "Twigoh Logo",
     },
+    idTag: "Twigoh",
   },
 ];
 

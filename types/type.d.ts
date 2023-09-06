@@ -34,6 +34,7 @@ interface ExperienceCardPreviewProps {
   experience: {
     companyData: CompanyData;
     imageData: ImageData;
+    idTag: string;
   };
 }
 
@@ -42,6 +43,7 @@ interface ExperienceCardProps {
     companyData: CompanyData;
     imageData: ImageData;
     tasks: string[];
+    idTag: string;
   };
   position: string;
 }

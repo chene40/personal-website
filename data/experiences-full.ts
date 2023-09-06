@@ -31,6 +31,7 @@ const experiencesFull = [
       "Designed and integrated a custom Language Service Protocol (LSP) to seamlessly integrate Monaco Editor with CKEditor 5, enhancing the user experience for editing source code within the platform. This innovation eliminated the need for manual copying and pasting, improving efficiency and productivity by 60% for users.",
       "Engineered and incorporated 5 reusable Stencil.js web components, reducing content authoring time in CKEditor5 by 30% and achieving a 20% increase in design consistency across the platform.",
     ],
+    idTag: "Esri",
   },
   {
     companyData: {
@@ -64,6 +65,7 @@ const experiencesFull = [
       "Implemented 6 data charts using ReCharts and 4 OSMs through OpenLayers to display real-time traffic data on intersection safety, queue length, city health and traffic congestion within the city of Hamilton for thousands of users",
       "Developed and executed over 10 unit tests using Jest to ensure the code quality, functionality, and reliability of all React components, pages, and Redux slices, resulting in a high-quality, bug-free web interface.",
     ],
+    idTag: "Cubic",
   },
   {
     companyData: {
@@ -88,6 +90,7 @@ const experiencesFull = [
       "Collectively bought down web load speed from 4.64s to under 3s (WEB + AMP site) for all devices and technology through media optimization, removal of unused applications/code, and pre-rendering UI/data content",
       "Oversee the implementation of 5 backlinks and 3 professional videos to help increase metadata information and boost SEO, SERP, TRUST + Authority, allowing Google to easily search, crawl, and index data pertaining to the web and bring Gunkii to page one of Google's SERP",
     ],
+    idTag: "Gunkii",
   },
   {
     companyData: {
@@ -114,6 +117,7 @@ const experiencesFull = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
     ],
+    idTag: "SFWRENG2XC3",
   },
   {
     companyData: {
@@ -139,6 +143,7 @@ const experiencesFull = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
     ],
+    idTag: "CodeNinjasMarkham",
   },
   {
     companyData: {
@@ -164,7 +169,6 @@ const experiencesFull = [
       companyLink: "https://www.linkedin.com/company/designlab-twigoh/",
       date: "2022",
     },
-
     imageData: {
       url: "/TwigohLogo.svg",
       alt: "Twigoh's Logo",
@@ -175,6 +179,7 @@ const experiencesFull = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
     ],
+    idTag: "Twigoh",
   },
 ];
 
