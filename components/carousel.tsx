@@ -70,7 +70,7 @@ export default function Carousel() {
           onClick={() => updateIndex(currentIndex + 1)}
         >
           <Image
-            src={"/Arrow.svg"}
+            src={"/misc/Arrow.svg"}
             alt="Right Arrow"
             width={30}
             height={30}
