@@ -26,8 +26,10 @@ const experiencesFull = [
       alt: "Esri Logo",
     },
     tasks: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
+      "Implemented an internal dependency graph visualizer to identify inter-connected dependencies amongst arcade expressions, reducing trouble-shooting time by 75%.",
+      "Developed 2 custom CKEditor5 plugins, streamlining content injection for users and reducing input time by 15s on average.",
+      "Designed and integrated a custom Language Service Protocol (LSP) to seamlessly integrate Monaco Editor with CKEditor 5, enhancing the user experience for editing source code within the platform. This innovation eliminated the need for manual copying and pasting, improving efficiency and productivity by 60% for users.",
+      "Engineered and incorporated 5 reusable Stencil.js web components, reducing content authoring time in CKEditor5 by 30% and achieving a 20% increase in design consistency across the platform.",
     ],
   },
   {
@@ -58,10 +60,9 @@ const experiencesFull = [
       alt: "McMaster University's Logo",
     },
     tasks: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
+      "Worked within an agile environment alongside 3 software developers to collectively build out a web interface, hosted through MenloLab, for an RTA traffic model that displays real-time data on how to improve traffic control",
+      "Implemented 6 data charts using ReCharts and 4 OSMs through OpenLayers to display real-time traffic data on intersection safety, queue length, city health and traffic congestion within the city of Hamilton for thousands of users",
+      "Developed and executed over 10 unit tests using Jest to ensure the code quality, functionality, and reliability of all React components, pages, and Redux slices, resulting in a high-quality, bug-free web interface.",
     ],
   },
   {
@@ -83,10 +84,9 @@ const experiencesFull = [
       alt: "Gunkii's Logo",
     },
     tasks: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec orci convallis, consectetur ligula eget, lacinia magna. Donec ultrices.",
+      "Lead and managed a team of 5 software development interns over a period of 12 weeks to tackle UI/performance issues appearing on live site, connectivity and synchronization of data between Google platforms, and increasing conversion rates based upon user interactions on CTA pages",
+      "Collectively bought down web load speed from 4.64s to under 3s (WEB + AMP site) for all devices and technology through media optimization, removal of unused applications/code, and pre-rendering UI/data content",
+      "Oversee the implementation of 5 backlinks and 3 professional videos to help increase metadata information and boost SEO, SERP, TRUST + Authority, allowing Google to easily search, crawl, and index data pertaining to the web and bring Gunkii to page one of Google's SERP",
     ],
   },
   {
