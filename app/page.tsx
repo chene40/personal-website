@@ -2,6 +2,7 @@
 import Header from "@/components/header";
 import ExperiencePreview from "@/components/experience-preview";
 import Carousel from "@/components/carousel";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Carousel />
       <ExperiencePreview />
+      <Footer />
     </div>
   );
 }

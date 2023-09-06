@@ -2,6 +2,7 @@
 import Header from "@/components/header";
 import InterestCard from "@/app/interests/interest-card";
 import interests from "@/data/interests-preview";
+import Footer from "@/components/footer";
 
 export default function Interests() {
   return (
@@ -19,6 +20,7 @@ export default function Interests() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

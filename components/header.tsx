@@ -2,11 +2,8 @@
 import Link from "next/link";
 
 export default function Header() {
-  const handleClick = () => {
-    console.log("downloaded!");
-  };
   return (
-    <div className="p-8 bg-cyan-400">
+    <div className="p-8 bg-cyan-400" id="top">
       <div className="flex justify-between text-white">
         {/* Replace the header with an icon or something? */}
         <Link href="/">Portfolio Home Page</Link>
@@ -15,14 +12,9 @@ export default function Header() {
           <Link href="/projects">Projects</Link>
           <Link href="/experiences">Experiences</Link>
           <Link href="/interests">Interests</Link>
-          <a
-            href="/Eric_Chen_Resume.pdf"
-            download="Eric_Chen_Resume.pdf"
-            // onClick={handleClick}
-          >
+          <a href="/Eric_Chen_Resume.pdf" download="Eric_Chen_Resume.pdf">
             Resume Copy
           </a>
-          <span>Contact</span>
         </header>
       </div>
     </div>
