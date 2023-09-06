@@ -8,11 +8,11 @@ This was a project that I've been pushing off for over a year oops, but hopefull
   - [X] Experience Cards (Preview)
 - [X] NavBar (Home Icon, Projects, Experiences, Interests, Contact)
     - [X] Resume Copy
-    - [ ] Add in Contact Methods
-- [ ] Footer
+    - [X] Add in Contact Methods
+- [X] Footer
 - [ ] About Me Page (Tech Interests + Education + Ambitions) 
 - [ ] Projects Page (Detailed)
-- [ ] Experience Page (Detailed)
+- [X] Experience Page (Detailed)
 - [ ] Interests Page
     - [X] Preview
     - [ ] Detailed
@@ -20,7 +20,7 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 ## Refinements
 - [X] Type Declaration and Consistency
 - [ ] Sticky Header
-- [ ] Dynamic Routing to Specific Cards (Projects/Experiences)
+- [X] Dynamic Routing to Specific Cards (Projects/Experiences)
 - [ ] Vertical Timeline Progression (Experiences) + Fade Animations
 - [ ] About Me Page RoadMap (Non-linear?)
 - [ ] UI Consistency + Explore Styling
