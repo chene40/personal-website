@@ -5,6 +5,9 @@ import Link from "next/link";
 // Project Imports
 import { ExperienceCardProps } from "@/types/type";
 
+// Relative/Local Imports
+import Timeline from "./timeline";
+
 export default function ExperienceCard({
   experience,
   position,
@@ -15,11 +18,11 @@ export default function ExperienceCard({
 
   return (
     <div className="h-full flex justify-center gap-x-8" id={idTag}>
-      {/* Fix this so that the dates are in a timeline later */}
       {position === "right" && (
-        <p className="w-1/3 text-white text-end ">{date}</p>
+        <p className="w-1/3 mt-3 text-white text-end ">{date}</p>
       )}
-      <div className="bg-white h-full w-1/3 p-8 rounded-lg">
+      {position === "right" && <Timeline />}
+      <div className="bg-white h-full w-1/3 p-8 rounded-lg mb-8">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-medium">{company}</h3>
           <Link target="_blank" href={companyLink}>
@@ -46,7 +49,8 @@ export default function ExperienceCard({
           </button>
         </div>
       </div>
-      {position === "left" && <p className="w-1/3 text-white">{date}</p>}
+      {position === "left" && <Timeline />}
+      {position === "left" && <p className="w-1/3 mt-3 text-white">{date}</p>}
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Experiences() {
         <h3 className="flex justify-center font-medium text-3xl mb-8 text-white">
           Experiences
         </h3>
-        <div className="flex flex-col gap-y-10">
+        <div className="flex flex-col">
           {experiencesFull.map((experience, index) => {
             return (
               <ExperienceCard
