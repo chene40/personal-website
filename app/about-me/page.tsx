@@ -4,10 +4,10 @@ import Image from "next/image";
 // Project Imports
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import timelineData from "@/data/timeline-data";
 
 // Relative/Local Imports
 import HorizontalTimeline from "./horizontal-timeline";
-import timelineData from "./timeline-data";
 
 export default function AboutMe() {
   return (

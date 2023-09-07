@@ -58,6 +58,21 @@ interface InterestCardProps {
   };
 }
 
+// Timeline Props
+interface ProfileTimelineProps {
+  dataPoint: {
+    date: string;
+    role: string;
+    color?: string;
+    imageData?: ImageData;
+    endIcon?: {
+      imageData: ImageData;
+      date: string;
+      role: string;
+    };
+  };
+}
+
 export {
   ImageData,
   CompanyData,
@@ -65,4 +80,5 @@ export {
   ExperienceCardPreviewProps,
   ExperienceCardProps,
   InterestCardProps,
+  ProfileTimelineProps,
 };

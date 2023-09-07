@@ -2,21 +2,7 @@
 import Image from "next/image";
 
 // Project Imports
-import { ImageData } from "@/types/type";
-
-interface ProfileTimelineProps {
-  dataPoint: {
-    date: string;
-    role: string;
-    color?: string;
-    imageData?: ImageData;
-    endIcon?: {
-      imageData: ImageData;
-      date: string;
-      role: string;
-    };
-  };
-}
+import { ProfileTimelineProps } from "@/types/type";
 
 export default function HorizontalTimeline({
   dataPoint,
