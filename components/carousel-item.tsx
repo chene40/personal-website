@@ -2,11 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Relative/Local Imports
-import icons from "@/data/assets";
-
 // Project Imports
 import { CarouselItemProps } from "@/types/type";
+import icons from "@/data/assets";
 
 export default function CarouselItem({ carouselItem }: CarouselItemProps) {
   const {

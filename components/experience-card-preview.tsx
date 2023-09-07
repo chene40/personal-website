@@ -4,7 +4,6 @@ import Link from "next/link";
 
 // Project Imports
 import { ExperienceCardPreviewProps } from "@/types/type";
-
 import icons from "@/data/assets";
 
 export default function ExperienceCardPreview({

@@ -1,7 +1,8 @@
+// Project Imports
+import { experiencesTop, experiencesBottom } from "@/data/experiences-preview";
+
 // Relative/Local Imports
 import ExperienceCardPreview from "./experience-card-preview";
-
-import { experiencesTop, experiencesBottom } from "@/data/experiences-preview";
 
 export default function ExperiencePreview() {
   return (

@@ -1,10 +1,10 @@
 // Project Imports
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import experiencesFull from "@/data/experiences-full";
 
 // Relative/Local Imports
 import ExperienceCard from "./experience-card";
-import Footer from "@/components/footer";
 
 export default function Experiences() {
   return (

@@ -1,4 +1,5 @@
 // Project Imports
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 export default function Projects() {
@@ -6,6 +7,7 @@ export default function Projects() {
     <div>
       <Header />
       <span>Projects</span>
+      <Footer />
     </div>
   );
 }
