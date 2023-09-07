@@ -1,10 +1,12 @@
 // Library/Module Imports
 import Image from "next/image";
+import Link from "next/link";
 
 // Project Imports
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import timelineData from "@/data/timeline-data";
+import contactInfo from "@/data/contact-info";
 
 // Relative/Local Imports
 import HorizontalTimeline from "./horizontal-timeline";
@@ -15,15 +17,29 @@ export default function AboutMe() {
       <Header />
       <div className="bg-gray-900 w-full p-10">
         <div className="flex justify-around items-center">
-          <div className="w-96 h-96 bg-white rounded-full">
-            <Image
-              src={"/Me.jpg"}
-              alt="A picture of me"
-              width={1000}
-              height={1000}
-              className="rounded-full p-2"
-            />
+          <div>
+            <div className="w-96 h-96 bg-white rounded-full">
+              <Image
+                src={"/Me.jpg"}
+                alt="A picture of me"
+                width={1000}
+                height={1000}
+                className="rounded-full p-2"
+              />
+            </div>
+            <div className="mt-12 h-12 flex justify-around items-center">
+              {contactInfo.map((contact, index) => {
+                return (
+                  <button key={index} className="border p-2 rounded-lg w-1/4">
+                    <Link target="_blank" href={contact.socialLink}>
+                      {contact.socialName}
+                    </Link>
+                  </button>
+                );
+              })}
+            </div>
           </div>
+
           <div className="w-3/5">
             <h2 className="text-5xl my-8">Eric Chen</h2>
             <div className="flex flex-col gap-y-4">
