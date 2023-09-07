@@ -11,7 +11,6 @@ export default function ExperiencePreview() {
           {"Here's a preview of some of my work experiences ~"}
         </h2>
         <div className="flex justify-evenly mb-12">
-          {/* Containerize the data elsewhere and pull from it */}
           {experiencesTop.map((experience, index) => {
             return (
               <ExperienceCardPreview experience={experience} key={index} />
