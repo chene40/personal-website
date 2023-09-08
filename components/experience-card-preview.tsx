@@ -47,7 +47,7 @@ export default function ExperienceCardPreview({
       </div>
       <Link
         href={`/experiences/#${idTag}`}
-        className="flex w-full h-1/5 rounded-b-3xl justify-center items-center bg-violet-400 text-white font-semibold"
+        className="flex w-full h-1/5 rounded-b-3xl justify-center items-center bg-violet-400 active:bg-violet-500 text-white font-semibold"
       >
         Learn More About This Position
       </Link>
