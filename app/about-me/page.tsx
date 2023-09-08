@@ -16,9 +16,9 @@ export default function AboutMe() {
     <div className="h-full text-white">
       <Header />
       <div className="bg-gray-900 w-full p-10">
-        <div className="flex justify-around items-center">
-          <div>
-            <div className="w-96 h-96 bg-white rounded-full">
+        <div className="flex justify-around items-start">
+          <div className="my-8">
+            <div className="w-80 h-80 bg-white rounded-full">
               <Image
                 src={"/Me.jpg"}
                 alt="A picture of me"
@@ -39,44 +39,37 @@ export default function AboutMe() {
               })}
             </div>
           </div>
-
           <div className="w-3/5">
             <h2 className="text-5xl my-8">Eric Chen</h2>
             <div className="flex flex-col gap-y-4">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur sed neque eleifend, gravida eros et, facilisis tortor.
-                Etiam pharetra vestibulum tortor. Fusce rutrum arcu nec lorem
-                rutrum vehicula. Vivamus sed nisl sit amet tellus blandit
-                iaculis. Nullam et purus placerat, dignissim lectus sit amet,
-                feugiat odio. Vivamus ultrices suscipit enim, ut faucibus nisl
-                convallis eu. Fusce varius, felis dapibus interdum blandit,
-                tellus leo pellentesque orci, id ornare sapien sapien sed felis.
+              <p className="text-md">
+                {` Hi there! My name's Eric, and I'm currently a fourth-year
+                software engineering student at McMaster University, passionate
+                about crafting seamless and user-friendly front-end experiences.`}
               </p>
               <p>
-                Suspendisse at iaculis erat, in mattis tellus. Nam orci justo,
-                sollicitudin quis blandit nec, cursus et ex. Vivamus non augue
-                sit amet lorem laoreet aliquet sit amet vitae eros. In mattis
-                hendrerit leo, sed scelerisque eros molestie in. In eu porttitor
-                tellus. Nulla dignissim odio ac mollis vehicula. Morbi quis est
-                venenatis, vestibulum turpis id, fringilla nibh. Integer at
-                hendrerit ex, a egestas mauris. Sed a vulputate ante, quis
-                vestibulum orci. Morbi vulputate erat lobortis pulvinar aliquam.
-                Mauris at vulputate nisi, vel tempus leo. Praesent sed lectus
-                sagittis, mollis orci in, cursus nibh.
+                {`Throughout my academic journey, I've had the privilege of diving
+                into a variety of enriching internships where I've gained
+                expertise in technologies such as React, Redux, Next.js,
+                Tailwind CSS, TypeScript, and more. My design philosophy leans
+                towards cozy minimalism, and I love creating interfaces that are
+                both visually appealing and intuitive. When I'm not coding, you
+                can find me building custom mechanical keyboards, assembling
+                unique PCs, and capturing life's moments through photography
+                (check out my dedicated page!).`}
               </p>
-              <p>
-                Suspendisse vulputate mi non dui tincidunt, at tempor nisl
-                pulvinar. Vestibulum et bibendum turpis, id tempus nulla.
-                Vestibulum sem justo, auctor vel tempus eu, commodo vel leo.
-                Vivamus gravida non metus et posuere. Morbi finibus augue ut
-                lorem maximus pulvinar. Quisque tortor elit, maximus nec purus
-                sed, faucibus vulputate turpis. Suspendisse condimentum
-                pellentesque nibh, ac ultrices sapien vulputate sit amet. Sed
-                quam nisi, interdum sit amet varius tempor, elementum eget
-                risus. Maecenas sit amet lacinia massa. Sed tempus neque velit,
-                eu blandit turpis hendrerit sit amet.
+              <p className="text-md">
+                {`I'm actively seeking a 4-8 month internship opportunity commencing
+				in January 2024, as I'm set to graduate in April 2025. Additionally,
+				I'm enthusiastic about broadening my skill set to encompass a range
+				of software technologies, including backend development and mobile app
+				creation. If you're in search of a dedicated and versatile team member
+				or simply wish to engage in discussions about related interests, please
+				don't hesitate to reach out. You can find my contact information under
+				my profile, and I look forward to the opportunity of collaborating with
+				you!`}
               </p>
+              <p></p>
             </div>
           </div>
         </div>
