@@ -10,7 +10,7 @@ This was a project that I've been pushing off for over a year oops, but hopefull
     - [X] Resume Copy
     - [X] Add in Contact Methods
 - [X] Footer
-- [ ] About Me Page (Tech Interests + Education + Ambitions) 
+- [X] About Me Page (Tech Interests + Education + Ambitions) 
 - [ ] Projects Page (Detailed)
 - [X] Experience Page (Detailed)
 - [ ] Interests Page
@@ -21,12 +21,12 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 - [X] Type Declaration and Consistency
 - [ ] Sticky Header
 - [X] Dynamic Routing to Specific Cards (Projects/Experiences)
-- [ ] Vertical Timeline Progression (Experiences) + Fade Animations
-- [ ] About Me Page RoadMap (Non-linear?)
+- [X] Vertical Timeline Progression (Experiences) + Fade Animations
+- [X] About Me Page RoadMap (Linear)
 - [ ] UI Consistency + Explore Styling
 
 ## Page Data to Be Populated
-- [ ] About Me
+- [X] About Me
 - [X] Carousel Preview Projects
 - [ ] Projects Detailed
 - [X] Experiences Preview
