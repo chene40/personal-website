@@ -21,14 +21,14 @@ export default function Footer() {
                 <Link
                   href={socialLink}
                   target="_blank"
-                  className="flex h-16 items-center"
+                  className="flex h-16 items-center relative"
                 >
                   <Image
                     src={url}
                     alt={alt}
                     height={20}
                     width={20}
-                    className="h-12 w-12 rounded-lg ml-4"
+                    className="h-12 w-12 rounded-lg left-4 absolute"
                   />
                   <p className="flex justify-center text-lg w-full">
                     {socialName}
@@ -38,11 +38,12 @@ export default function Footer() {
             );
           })}
         </ul>
-        <div className="w-full h-24 bg-gray-700 flex items-center justify-center">
-          <Link href="#top" className="text-xl">
-            Jump Back to Top
-          </Link>
-        </div>
+        <Link
+          href="#top"
+          className="w-full h-24 bg-gray-700 active:bg-gray-800 flex items-center justify-center text-xl"
+        >
+          Jump Back to Top
+        </Link>
       </div>
     </div>
   );
