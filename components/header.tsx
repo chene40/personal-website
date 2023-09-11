@@ -9,7 +9,6 @@ export default function Header() {
         <Link href="/">Portfolio Home Page</Link>
         <header className="flex justify-end space-x-10">
           <Link href="/about-me">About Me</Link>
-          <Link href="/projects">Projects</Link>
           <Link href="/experiences">Experiences</Link>
           <Link href="/interests">Interests</Link>
           <Link href="/Eric_Chen_Resume.pdf" download="Eric_Chen_Resume.pdf">
