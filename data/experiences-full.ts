@@ -3,12 +3,12 @@ const experiencesFull = [
     companyData: {
       company: "Esri",
       jobTitle: "Software Engineer Intern",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-		velit rutrum, malesuada nibh quis, fringilla urna. Donec non velit
-		risus. Nunc lobortis, enim at consectetur scelerisque, metus augue
-		tristique nulla, ac porttitor erat turpis eget arcu. Etiam porttitor
-		sem ut ultricies facilisis. Nam laoreet orci bibendum neque tempus
-		porttitor.`,
+      description: `This role involves close collaboration with product engineers, software developers, and designers to craft Esri's
+	  renowned ArcGIS software. I collaborated and worked alongside various teams, including MapViewer, JSAPI, ArcGIS Online, Arcade, and
+	  Popups, which allowed me to gain a comprehensive understanding of the project's scope and deliver the necessary requirements and
+	  results. The primary focus remained on frontend development, encompassing various aspects such as shadow DOM, reusable web components
+	  (stenciljs), and proficiency in the language server protocol. This journey has been exhilarating, and I'm thrilled to share these
+	  incredible experiences!`,
       techStack: [
         "html",
         "css",
@@ -37,12 +37,13 @@ const experiencesFull = [
     companyData: {
       company: "McMaster University",
       jobTitle: "Software Developer Intern",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-		velit rutrum, malesuada nibh quis, fringilla urna. Donec non velit
-		risus. Nunc lobortis, enim at consectetur scelerisque, metus augue
-		tristique nulla, ac porttitor erat turpis eget arcu. Etiam porttitor
-		sem ut ultricies facilisis. Nam laoreet orci bibendum neque tempus
-		porttitor.`,
+      description: `
+	  In this predominantly frontend-focused role, I had the privilege of working in close collaboration with UI/UX designers and software
+	  engineers within an agile framework to craft a dynamic web interface that delivered real-time traffic insights. This project represented
+	  a partnership between McMaster University and Cubic Transportation Systems, with a mission to cater to Hamilton and its neighboring
+	  communities. My primary responsibilities encompassed translating design visions into an intuitive user experience, coupled with the
+	  fine-tuning of performance for streamlined data presentation. My contributions made a substantial impact on elevating traffic awareness
+	  in the region, and this experience was instrumental in honing my skills in user-centric web development.`,
       techStack: [
         "javascript",
         "typescript",
@@ -71,12 +72,13 @@ const experiencesFull = [
     companyData: {
       company: "Gunkii",
       jobTitle: "Shopify Lead Software Developer (Intern)",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-		velit rutrum, malesuada nibh quis, fringilla urna. Donec non velit
-		risus. Nunc lobortis, enim at consectetur scelerisque, metus augue
-		tristique nulla, ac porttitor erat turpis eget arcu. Etiam porttitor
-		sem ut ultricies facilisis. Nam laoreet orci bibendum neque tempus
-		porttitor.`,
+      description: `In my capacity as the Technical Team Lead at Gunkii, a startup born during the COVID-19 pandemic in 2020, I played a
+	  pivotal role in guiding a talented team of five software development interns. My role encompassed a blend of management and technical
+	  leadership, where I not only delegated tasks but also actively engaged with team members to provide guidance and support, ensuring the
+	  successful execution of projects. Our primary focus was on Shopify development, and this experience allowed me to gain valuable insights
+	  into cross-platform strategies, particularly in optimizing performance through deployment services like Accelerated Mobile Pages (AMP).
+	  In close collaboration with the Marketing Team Lead, I also organized and presented weekly demos, fostering a culture of cross-functional
+	  cooperation and knowledge sharing within the organization.`,
       techStack: ["html", "css", "javascript", "sass", "shopify", "github"],
       companyLink: "https://gunkii.com/",
       date: "2022",
@@ -96,12 +98,13 @@ const experiencesFull = [
     companyData: {
       company: "McMaster University",
       jobTitle: "Teaching Assistant (Software Engineer II)",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-		velit rutrum, malesuada nibh quis, fringilla urna. Donec non velit
-		risus. Nunc lobortis, enim at consectetur scelerisque, metus augue
-		tristique nulla, ac porttitor erat turpis eget arcu. Etiam porttitor
-		sem ut ultricies facilisis. Nam laoreet orci bibendum neque tempus
-		porttitor.`,
+      description: `As a teaching assistant for the course SFWRENG 2XC3, centered on low-level C programming, bash scripting, and Unix shell
+	  interaction, I played an integral role in guiding second-year software engineering students. I lead biweekly lab sessions with an average
+	  of 20-30 students, totaling 4 hours per week, and provided essential support both inside and outside of designated work hours. During
+	  minor labs (work periods), I addressed students' questions, assisting them in debugging their code and mentoring them on common good
+	  practices to follow in software development, while ensuring a strong grasp of the material. During major labs (practicums), I diligently
+	  invigilated, ensuring academic integrity and individual student progress. I prioritize creating a productive learning environment as a
+	  fundamental aspect of my role.`,
       techStack: ["bash", "c"],
       companyLink:
         "https://academiccalendars.romcmaster.ca/preview_course_nopop.php?catoid=53&coid=267962",
@@ -123,12 +126,12 @@ const experiencesFull = [
     companyData: {
       company: "Code Ninjas Markham",
       jobTitle: "Roblox Development Camp Counsellor",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-		velit rutrum, malesuada nibh quis, fringilla urna. Donec non velit
-		risus. Nunc lobortis, enim at consectetur scelerisque, metus augue
-		tristique nulla, ac porttitor erat turpis eget arcu. Etiam porttitor
-		sem ut ultricies facilisis. Nam laoreet orci bibendum neque tempus
-		porttitor.`,
+      description: `
+	  In my role as a Technical Camp Counselor, I had the pleasure of teaching kids the ins and outs of Roblox game development using Roblox
+	  Studio. I introduced them to the basics of Lua, the programming language for Roblox, allowing them to enhance their custom games with
+	  fun scripts. I conducted week-long sessions with class sizes averaging around 25-30 students, where we delved into scripting and
+	  discussed online safety precautions. We also explored fundamental game physics concepts like gravity and item anchoring. My aim was
+	  to ignite their passion for game development and coding, fostering a love for tech through the exciting world of game creation.`,
       techStack: ["lua"],
       companyLink: "https://www.codeninjas.com/markham-on-ca",
       date: "2022",
@@ -149,12 +152,11 @@ const experiencesFull = [
     companyData: {
       company: "Twigoh",
       jobTitle: "Full-Stack Software Engineer (Intern)",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis
-		velit rutrum, malesuada nibh quis, fringilla urna. Donec non velit
-		risus. Nunc lobortis, enim at consectetur scelerisque, metus augue
-		tristique nulla, ac porttitor erat turpis eget arcu. Etiam porttitor
-		sem ut ultricies facilisis. Nam laoreet orci bibendum neque tempus
-		porttitor.`,
+      description: `During my internship as a full-stack engineer at Twigoh, a startup that evolved into a digital solutions consultancy, I
+	  was part of a talented and diverse team comprising UX/UI designers, frontend and backend engineers (though most of us dabbled in full
+		stack). Our agile work environment was characterized by a laid-back approach, with just a handful of weekly meetings to accommodate
+		our different time zones. What made it truly exceptional was Twigoh's youthful and vibrant culture. Every day felt like a new
+		adventure, and I had a blast collaborating with this fantastic team to create exciting projects together.`,
       techStack: [
         "javascript",
         "typescript",
