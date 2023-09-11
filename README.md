@@ -11,7 +11,6 @@ This was a project that I've been pushing off for over a year oops, but hopefull
     - [X] Add in Contact Methods
 - [X] Footer
 - [X] About Me Page (Tech Interests + Education + Ambitions) 
-- [ ] Projects Page (Detailed)
 - [X] Experience Page (Detailed)
 - [ ] Interests Page
     - [X] Preview
@@ -28,9 +27,8 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 ## Page Data to Be Populated
 - [X] About Me
 - [X] Carousel Preview Projects
-- [ ] Projects Detailed
 - [X] Experiences Preview
-- [ ] Experiences Detailed
+- [X] Experiences Detailed
 - [X] Interests Preview
 - [ ] Interests Detailed
 
