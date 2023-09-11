@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="p-8 bg-cyan-400" id="top">
+    <div className="p-8 bg-gray-800" id="top">
       <div className="flex justify-between text-white">
         {/* Replace the header with an icon or something? */}
         <Link href="/">Portfolio Home Page</Link>

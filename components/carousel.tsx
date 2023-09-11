@@ -40,7 +40,7 @@ export default function Carousel() {
   }, [currentIndex, stopAutoPlay]);
 
   return (
-    <div className="h-[75vh] w-full flex flex-col items-center overflow-hidden bg-cyan-200 relative">
+    <div className="h-[75vh] w-full flex flex-col items-center overflow-hidden bg-gray-900 relative">
       <div
         className="w-full h-full whitespace-nowrap inline-flex"
         style={{
@@ -59,6 +59,7 @@ export default function Carousel() {
           onClick={() => updateIndex(currentIndex - 1)}
         >
           <Image
+            className="invert"
             src={"/misc/Arrow.svg"}
             alt="Left Arrow"
             width={30}
@@ -74,20 +75,13 @@ export default function Carousel() {
             alt="Right Arrow"
             width={30}
             height={30}
-            className="rotate-180"
+            className="rotate-180 invert"
           />
         </button>
         {/* Replace button text with icon (make circle filled in when current index is selected) */}
         <div className="flex">
           {items.map((item, index) => {
             return (
-              //   <button
-              //     className="mr-2"
-              //     key={index}
-              //     onClick={() => updateIndex(index)}
-              //   >
-              //     {currentIndex === index ? "X" : "O"}
-              //   </button>
               <div key={index} className="flex items-center mb-4 mr-4">
                 <input
                   type="radio"
@@ -100,14 +94,14 @@ export default function Carousel() {
             );
           })}
         </div>
-        <label className="absolute bottom-4 right-24 inline-flex items-center cursor-pointer">
+        <label className="absolute bottom-4 right-24 inline-flex items-center cursor-pointer ">
           <input
             type="checkbox"
             onClick={() => setStopAutoPlay(!stopAutoPlay)}
             className="sr-only peer"
           />
           <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-          <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 text-white">
             Pause Auto Transition
           </span>
         </label>

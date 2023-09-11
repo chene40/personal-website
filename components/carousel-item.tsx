@@ -23,11 +23,17 @@ export default function CarouselItem({ carouselItem }: CarouselItemProps) {
   const { url, alt } = imageData;
 
   return (
-    <div className="h-full w-full shrink-0 py-8 px-24 flex">
+    <div className="h-full w-full shrink-0 py-8 px-24 flex text-white">
       <div className="w-1/2 h-full">
         <div className="flex h-24 items-center justify-between">
           <h3 className="text-3xl font-semibold">{title}</h3>
-          <Image src={url} alt={alt} width={100} height={100} />
+          <Image
+            className="invert"
+            src={url}
+            alt={alt}
+            width={100}
+            height={100}
+          />
         </div>
         <hr className="bg-black h-0.5" />
         <div className="h-full flex flex-col py-8">
@@ -57,7 +63,7 @@ export default function CarouselItem({ carouselItem }: CarouselItemProps) {
               );
             })}
           </div>
-          <div className="h-1/4 flex justify-evenly">
+          <div className="h-1/4 flex justify-evenly text-black">
             <button className="h-16 w-1/3 flex justify-center items-center bg-emerald-200 active:bg-emerald-300 rounded-lg border-solid border-2 border-sky-300">
               <Link
                 href={projectLink}

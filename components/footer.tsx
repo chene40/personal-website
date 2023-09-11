@@ -7,7 +7,7 @@ import contactInfo from "@/data/contact-info";
 
 export default function Footer() {
   return (
-    <div className="bg-cyan-500 text-white">
+    <div className="bg-gray-800 text-white">
       <div className="flex flex-col items-center">
         <ul className="p-8 w-4/5 flex justify-between gap-x-6">
           {contactInfo.map((contact, index) => {
@@ -38,7 +38,7 @@ export default function Footer() {
             );
           })}
         </ul>
-        <div className="w-full h-24 bg-cyan-400 flex items-center justify-center">
+        <div className="w-full h-24 bg-gray-700 flex items-center justify-center">
           <Link href="#top" className="text-xl">
             Jump Back to Top
           </Link>
