@@ -38,12 +38,15 @@ export default function Footer() {
             );
           })}
         </ul>
-        <Link
-          href="#top"
-          className="w-full h-24 bg-gray-700 active:bg-gray-800 flex items-center justify-center text-xl"
-        >
-          Jump Back to Top
-        </Link>
+        <hr className="h-1 w-4/5" />
+        <div className="flex flex-col gap-y-2 justify-center items-center my-8">
+          <p>
+            {`Thanks for swinging by and checking out my webpage! I'd love to connect with you and have a chat ~`}
+          </p>
+          <p>
+            Feel free to connect with me by pressing any of the buttons above =D
+          </p>
+        </div>
       </div>
     </div>
   );
