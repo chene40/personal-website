@@ -1,6 +1,8 @@
+"use client";
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 // Project Imports
 import contactInfo from "@/data/contact-info";
@@ -9,12 +11,13 @@ export default function Footer() {
   return (
     <div className="bg-gray-800 text-white">
       <div className="flex flex-col items-center">
-        <ul className="p-8 w-4/5 flex justify-between gap-x-6">
+        <ul className="p-8 w-4/5 flex justify-between gap-x-12">
           {contactInfo.map((contact, index) => {
             const { socialName, socialLink, imageData } = contact;
             const { url, alt } = imageData;
             return (
-              <li
+              <motion.li
+                whileHover={{ scale: 1.1 }}
                 key={index}
                 className="w-full rounded-xl bg-cyan-600 active:bg-cyan-700"
               >
@@ -34,7 +37,7 @@ export default function Footer() {
                     {socialName}
                   </p>
                 </Link>
-              </li>
+              </motion.li>
             );
           })}
         </ul>

@@ -1,6 +1,8 @@
+"use client";
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 // Project Imports
 import Footer from "@/components/footer";
@@ -18,7 +20,10 @@ export default function AboutMe() {
       <div className="bg-gray-900 w-full p-10">
         <div className="flex justify-around items-start">
           <div className="my-8">
-            <div className="w-80 h-80 bg-white rounded-full">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="w-80 h-80 bg-white rounded-full"
+            >
               <Image
                 src={"/Me.jpg"}
                 alt="A picture of me"
@@ -26,15 +31,19 @@ export default function AboutMe() {
                 height={1000}
                 className="rounded-full p-2"
               />
-            </div>
+            </motion.div>
             <div className="mt-12 h-12 flex justify-around items-center">
               {contactInfo.map((contact, index) => {
                 return (
-                  <button key={index} className="border p-2 rounded-lg w-1/4">
+                  <motion.button
+                    key={index}
+                    className="border p-2 rounded-lg w-1/4"
+                    whileHover={{ scale: 1.25 }}
+                  >
                     <Link target="_blank" href={contact.socialLink}>
                       {contact.socialName}
                     </Link>
-                  </button>
+                  </motion.button>
                 );
               })}
             </div>
