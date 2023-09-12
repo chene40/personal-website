@@ -1,6 +1,10 @@
+"use client";
+
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
+
+import { motion } from "framer-motion";
 
 // Project Imports
 import { ExperienceCardPreviewProps } from "@/types/type";
@@ -16,7 +20,10 @@ export default function ExperienceCardPreview({
   const { url, alt } = imageData;
 
   return (
-    <div className="bg-emerald-500 w-1/4 h-96 rounded-3xl flex flex-col">
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      className="bg-emerald-500 w-1/4 h-96 rounded-3xl flex flex-col"
+    >
       <div className="bg-white h-1/5 rounded-t-3xl flex justify-between">
         <div className="p-4 w-2/3">
           <p>{company}</p>
@@ -51,6 +58,6 @@ export default function ExperienceCardPreview({
       >
         Learn More About This Position
       </Link>
-    </div>
+    </motion.div>
   );
 }
