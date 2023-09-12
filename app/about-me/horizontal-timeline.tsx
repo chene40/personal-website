@@ -1,6 +1,7 @@
+"use client";
 // Library/Module Imports
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 // Project Imports
 import { ProfileTimelineProps } from "@/types/type";
 
@@ -20,7 +21,10 @@ export default function HorizontalTimeline({
 
   return (
     <div className={`${renderedColor} w-1/5 h-2 relative`}>
-      <div className="-top-14 -left-28 absolute flex flex-col items-center">
+      <motion.div
+        whileHover={{ scale: 1.35 }}
+        className="-top-14 -left-28 absolute flex flex-col items-center"
+      >
         <p className="w-60 whitespace-normal text-center p-2">{date}</p>
         <div className="bg-white w-10 h-10 rounded-full">
           <Image
@@ -32,10 +36,13 @@ export default function HorizontalTimeline({
           />
         </div>
         <p className="w-60 whitespace-normal text-center p-2">{role}</p>
-      </div>
+      </motion.div>
 
       {renderedEndIcon && (
-        <div className="-top-14 -right-28 absolute flex flex-col items-center">
+        <motion.div
+          whileHover={{ scale: 1.35 }}
+          className="-top-14 -right-28 absolute flex flex-col items-center"
+        >
           <p className="w-60 whitespace-normal text-center p-2">
             {renderedEndIcon.date}
           </p>
@@ -51,7 +58,7 @@ export default function HorizontalTimeline({
           <p className="w-60 whitespace-normal text-center p-2">
             {renderedEndIcon.role}
           </p>
-        </div>
+        </motion.div>
       )}
     </div>
   );
