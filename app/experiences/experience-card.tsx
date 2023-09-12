@@ -1,6 +1,9 @@
+"use client";
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { motion, useInView, useAnimate } from "framer-motion";
 
 // Project Imports
 import { ExperienceCardProps } from "@/types/type";
@@ -16,13 +19,34 @@ export default function ExperienceCard({
   const { company, jobTitle, description, date, companyLink } = companyData;
   const { url, alt } = imageData;
 
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      animate(
+        scope.current,
+        {
+          opacity: 1,
+          x: 0,
+        },
+        { duration: 0.75 }
+      );
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isInView]);
+
   return (
     <div className="h-full flex justify-center gap-x-8" id={idTag}>
       {position === "right" && (
         <p className="w-1/3 mt-3 text-white text-end ">{date}</p>
       )}
       {position === "right" && <Timeline />}
-      <div className="bg-white h-full w-1/3 p-8 rounded-lg mb-8">
+      <motion.div
+        className="bg-white h-full w-1/3 p-8 rounded-lg mb-8"
+        ref={scope}
+        initial={{ opacity: 0, x: position === "left" ? -100 : 100 }}
+      >
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-medium">{company}</h3>
           <Link target="_blank" href={companyLink}>
@@ -48,7 +72,7 @@ export default function ExperienceCard({
             </Link>
           </button>
         </div>
-      </div>
+      </motion.div>
       {position === "left" && <Timeline />}
       {position === "left" && <p className="w-1/3 mt-3 text-white">{date}</p>}
     </div>
