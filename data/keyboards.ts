@@ -13,23 +13,22 @@ const keyboards = [
     ],
     dimensions: "319 x 137 x 18 (mm)",
     typingAngle: "8°",
-    extraSpecs: [
+    productDetail: [
       "Tri-Mode PCB",
       "CNC-Machined Aluminum Case",
       "Owlstab V2 Stabilizers",
       "Krytox 205g0 Lube",
-      "Gasket Mount",
-      "80-84 Keys",
-      "75% Layout",
       "QK75 Golden Flower Rotary Knob",
     ],
     foams: ["PCB PE Sheet", "Poron Plate Foam", "Poron Case Foam"],
+    buildStyle: ["Gasket Mount", "80-84 Keys/75%"],
     configSoftware: "QKConfig",
     RGBSupport: "No",
     imageData: {
       url: "/interests/keyboards/QK75Exploded.png",
       alt: "Exploded view of the QK75 Keyboard",
     },
+    imageOrientation: "vertical",
     groupBuy: "Yes",
   },
   {
@@ -43,14 +42,11 @@ const keyboards = [
       "PC Plate",
       "All foams",
     ],
-    extraSpecs: [
+    productDetail: [
       "Tri-Mode PCB",
       "Aluminum Top and Bottom Case",
       "WS V3 Stabilizers",
       "Krytox 205g0 Lube",
-      "Gasket Mount",
-      "80-84 Keys",
-      "75% Layout",
       "E-White Zoom75 Knob",
       "2U LCD Module",
     ],
@@ -62,12 +58,14 @@ const keyboards = [
       "Poron Plate Foam",
       "Poron Switch Foam",
     ],
+    buildStyle: ["Gasket Mount", "80-84 Keys/75%"],
     configSoftware: "QMK/VIA",
     RGBSupport: "Yes",
     imageData: {
       url: "/interests/keyboards/Zoom75Exploded.png",
       alt: "Exploded view of the Zoom75 Keyboard",
     },
+    imageOrientation: "horizontal",
     groupBuy: "Yes",
   },
   {
@@ -75,32 +73,31 @@ const keyboards = [
     manufacturer: "Keychron",
     website:
       "https://keychron.ca/products/keychron-q3-qmk-custom-mechanical-keyboard?variant=40101546000467",
-    color: "Carbon Black - A",
+    color: "Carbon Black (A)",
     specification: [
       "Double-shot OSA PBT Keycaps",
       "Gateron G Pro Switches",
       "Steel Plate",
       "All foams",
     ],
-    extraSpecs: [
+    productDetail: [
       "Wired Hot-swap PCB",
       "CNC-Machined Aluminum Case (Polished, Anodized, Sandblasted)",
       "Screw-In PCB Stabilizers",
-      "Double Gasket Mount",
-      "88 Keys",
-      "80%/TKL Layout",
       "Keychron Black Rotary Knob",
     ],
     dimensions: "365.1 x 137 x 19.7 (mm)",
     typingAngle: "5.2°",
     foams: ["Sound Absorbing Foam", "Case Foam"],
+    buildStyle: ["Double Gasket Mount", "88 Keys/80%/TKL"],
     configSoftware: "QMK/VIA",
     RGBSupport: "Yes",
     imageData: {
       url: "/interests/keyboards/KeychronQ3Exploded.png",
       alt: "Exploded view of the Keychron Q3 Keyboard",
     },
-    groupBuy: "No it's but usually limited in stock",
+    imageOrientation: "horizontal",
+    groupBuy: "No, but usually limited in stock",
   },
 ];
 

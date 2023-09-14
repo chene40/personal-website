@@ -73,6 +73,27 @@ interface ProfileTimelineProps {
   };
 }
 
+interface KeyboardProps {
+  item: {
+    name: string;
+    manufacturer: string;
+    website: string;
+    color: string;
+    specification: string[];
+    dimensions: string;
+    typingAngle: string;
+    productDetail: string[];
+    buildStyle: string[];
+    foams: string[];
+    configSoftware: string;
+    RGBSupport: string; // can be boolean
+    imageData: ImageData;
+    imageOrientation: string;
+    groupBuy: string; // can be boolean
+  };
+  figNum: number;
+}
+
 export {
   ImageData,
   CompanyData,
@@ -81,4 +102,5 @@ export {
   ExperienceCardProps,
   InterestCardProps,
   ProfileTimelineProps,
+  KeyboardProps,
 };
