@@ -23,6 +23,8 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 - [X] Vertical Timeline Progression (Experiences) + Fade Animations
 - [X] About Me Page RoadMap (Linear)
 - [ ] UI Consistency + Explore Styling
+- [ ] Retouch Routing
+- [ ] Refactor Shared Styles and Next.Js Layout Templates
 
 ## Page Data to Be Populated
 - [X] About Me
@@ -35,4 +37,3 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 ## Additional Features/Extras
 - [ ] Transitions and Animations
 - [ ] Electro Cursor Navigation Integration
-- [ ] 3D Model (Keyboard Interests)
