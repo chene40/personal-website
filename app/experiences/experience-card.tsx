@@ -66,11 +66,15 @@ export default function ExperienceCard({
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-blue-200 w-2/5 h-12 rounded-xl">
-            <Link target="_blank" href={companyLink}>
+          <Link
+            target="_blank"
+            href={companyLink}
+            className="w-full flex justify-center items-center"
+          >
+            <button className="bg-blue-200 w-2/5 h-12 rounded-xl">
               Learn More!
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </motion.div>
       {position === "left" && <Timeline />}

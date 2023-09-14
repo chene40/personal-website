@@ -64,19 +64,20 @@ export default function CarouselItem({ carouselItem }: CarouselItemProps) {
             })}
           </div>
           <div className="h-1/4 flex justify-evenly text-black">
-            <button className="h-16 w-1/3 flex justify-center items-center bg-emerald-200 active:bg-emerald-300 rounded-lg border-sky-300">
-              <Link
-                href={projectLink}
-                target={projectLink === "/projects" ? "_self" : "_blank"}
-              >
+            <Link
+              href={projectLink}
+              target={projectLink === "/projects" ? "_self" : "_blank"}
+              className="w-1/3"
+            >
+              <button className="h-16 w-full flex justify-center items-center bg-emerald-200 active:bg-emerald-300 rounded-lg border-sky-300">
                 {button1 ? button1 : "Learn More About Project"}
-              </Link>
-            </button>
-            <button className="h-16 w-1/3 flex justify-center items-center bg-red-200 active:bg-red-300 rounded-lg border-sky-300">
-              <Link href={githubLink} target="_blank">
+              </button>
+            </Link>
+            <Link href={githubLink} target="_blank" className="w-1/3">
+              <button className="h-16 w-full flex justify-center items-center bg-red-200 active:bg-red-300 rounded-lg border-sky-300">
                 {button2 ? button2 : "View the Source Code"}
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

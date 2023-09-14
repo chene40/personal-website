@@ -26,10 +26,12 @@ export default function InterestCard({ interestData }: InterestCardProps) {
           />
         </div>
       </div>
-      <button className="bg-blue-100 h-12 rounded-b-3xl active:bg-blue-200">
-        {/* Redirect to the next page on the website e.g. /interests/interestA */}
-        <Link href={redirectPath}>Learn More</Link>
-      </button>
+      {/* Redirect to the next page on the website e.g. /interests/interestA */}
+      <Link href={redirectPath}>
+        <button className="bg-blue-100 h-12 w-full rounded-b-3xl active:bg-blue-200">
+          Learn More
+        </button>
+      </Link>
     </div>
   );
 }
