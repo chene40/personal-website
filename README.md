@@ -12,9 +12,9 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 - [X] Footer
 - [X] About Me Page (Tech Interests + Education + Ambitions) 
 - [X] Experience Page (Detailed)
-- [ ] Interests Page
+- [X] Interests Page
     - [X] Preview
-    - [ ] Detailed
+    - [X] Detailed
 
 ## Refinements
 - [X] Type Declaration and Consistency
@@ -32,7 +32,7 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 - [X] Experiences Preview
 - [X] Experiences Detailed
 - [X] Interests Preview
-- [ ] Interests Detailed
+- [X] Interests Detailed
 
 ## Additional Features/Extras
 - [ ] Transitions and Animations
