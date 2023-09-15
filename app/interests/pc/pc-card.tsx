@@ -64,10 +64,8 @@ export default function PCCard({ computer }: ComputerProps) {
               <span className="font-semibold">Case: </span>
               <span className="italic">{pcCase}</span>
             </li>
-            <span className="font-semibold">Bottleneck: </span>
-            <span className="italic">Some value here</span>
           </ul>
-          <div className="mt-2">
+          <div className="mt-4">
             <h2 className="text-2xl italic">Thoughts on Parts/Builds</h2>
             <hr className="h-0.5 bg-black my-2 mr-8" />
             <div className="flex flex-col gap-y-4 mr-8">
