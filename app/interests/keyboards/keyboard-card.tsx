@@ -111,11 +111,12 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link href={url} target="_blank">
               <Image
+                className="rounded-xl w-full h-auto"
                 src={url}
                 alt={alt}
-                height={2000}
-                width={1000}
-                className="rounded-lg"
+                width={0}
+                height={0}
+                sizes="100vw"
               />
             </Link>
           </motion.div>

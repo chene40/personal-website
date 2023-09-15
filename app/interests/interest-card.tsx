@@ -18,11 +18,12 @@ export default function InterestCard({ interestData }: InterestCardProps) {
         <p className="whitespace-normal w-2/3 mr-4">{description}</p>
         <div className="h-full w-1/3 flex justify-center">
           <Image
-            className="rounded-xl"
+            className="rounded-xl w-full h-auto"
             src={url}
-            width={320}
-            height={100}
             alt={alt}
+            width={0}
+            height={0}
+            sizes="100vw"
           />
         </div>
       </div>
