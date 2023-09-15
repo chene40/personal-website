@@ -1,10 +1,12 @@
 "use client";
 
+// Library/Module Imports
 import Image from "next/image";
 import { KeyboardProps } from "@/types/type";
 import Link from "next/link";
-
 import { useState } from "react";
+
+import { motion } from "framer-motion";
 
 export default function KeyboardCard({ item, figNum }: KeyboardProps) {
   const [foamsOpened, setFoamsOpened] = useState(false);
@@ -106,31 +108,37 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
             imageOrientation === "vertical" ? "w-1/4" : "w-2/5"
           } h-full justify-center flex flex-col items-center gap-y-3`}
         >
-          <Image
-            src={url}
-            alt={alt}
-            height={2000}
-            width={1000}
-            className="rounded-lg"
-          />
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link href={url} target="_blank">
+              <Image
+                src={url}
+                alt={alt}
+                height={2000}
+                width={1000}
+                className="rounded-lg"
+              />
+            </Link>
+          </motion.div>
           <figcaption className="text-center italic">
             Figure {figNum}: Exploded view of the {name}
           </figcaption>
         </figure>
       </div>
-      <div className="flex mt-6 gap-x-4">
-        {displayPreview.map((keyboard, index) => {
+      <div className="flex mt-6 gap-x-8">
+        {displayPreview.map(({ url, alt }, index) => {
           return (
-            <div key={index}>
-              <Image
-                className="rounded-xl w-full h-auto"
-                src={keyboard.url}
-                alt={keyboard.alt}
-                width={0}
-                height={0}
-                sizes="100vw"
-              />
-            </div>
+            <motion.div key={index} whileHover={{ scale: 1.1 }}>
+              <Link href={url} target="_blanks">
+                <Image
+                  className="rounded-xl w-full h-auto"
+                  src={url}
+                  alt={alt}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </Link>
+            </motion.div>
           );
         })}
       </div>
