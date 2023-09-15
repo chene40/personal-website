@@ -12,6 +12,10 @@ const computers = [
     partsList: "https://ca.pcpartpicker.com/user/Yericc98/saved/#view=DR7t3C",
     blogPost: "https://ca.pcpartpicker.com/b/gyZZxr",
     description: "Something from the blog",
+    imageData: {
+      url: "/interests/computer/PC1.jpg",
+      alt: "An image of my personal PC",
+    },
   },
   {
     cpu: "AMD Ryzen 5 5600 3.5 GHz 6-Core Processor",
@@ -26,6 +30,10 @@ const computers = [
     partsList: "https://ca.pcpartpicker.com/user/Yericc98/saved/#view=q3DsK8",
     blogPost: "https://ca.pcpartpicker.com/b/d2ZZxr",
     description: "Something from the blog",
+    imageData: {
+      url: "/interests/computer/PC2.jpg",
+      alt: "An image of a PC that I built for my cousin",
+    },
   },
 ];
 
