@@ -1,6 +1,9 @@
+"use client";
 // Library/Module Imports
 import Link from "next/link";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 // Project Imports
 import { ComputerProps } from "@/types/type";
@@ -79,40 +82,46 @@ export default function PCCard({ computer }: ComputerProps) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-4 justify-center rounded-lg">
+        <div className="flex flex-col gap-y-8 justify-center rounded-lg">
           {imageData.map(({ url, alt }, index) => {
             return (
-              <Image
-                key={index}
-                className="rounded-lg"
-                src={url}
-                alt={alt}
-                width={400}
-                height={100}
-              />
+              <motion.div key={index} whileHover={{ scale: 1.1 }}>
+                <Link href={url} target="_blank">
+                  <Image
+                    className="rounded-xl w-full h-auto"
+                    src={url}
+                    alt={alt}
+                    width={0}
+                    height={0}
+                    sizes="40vh"
+                  />
+                </Link>
+              </motion.div>
             );
           })}
         </div>
       </div>
       <div className="flex justify-evenly w-full h-16">
-        <Link
-          href={partsList}
-          target="_blank"
+        <motion.div
+          whileHover={{ scale: 1.1 }}
           className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-1/4"
         >
-          <button className="flex justify-center items-center h-full w-full text-white">
-            View Parts (PCPartPicker)
-          </button>
-        </Link>
-        <Link
-          href={blogPost}
-          target="_blank"
+          <Link href={partsList} target="_blank">
+            <button className="flex justify-center items-center h-full w-full text-white">
+              View Parts (PCPartPicker)
+            </button>
+          </Link>
+        </motion.div>
+        <motion.div
           className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-1/4"
+          whileHover={{ scale: 1.1 }}
         >
-          <button className="flex justify-center items-center h-full w-full text-white">
-            Thoughts On Build (Blog)
-          </button>
-        </Link>
+          <Link href={blogPost} target="_blank">
+            <button className="flex justify-center items-center h-full w-full text-white">
+              Thoughts On Build (Blog)
+            </button>
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
