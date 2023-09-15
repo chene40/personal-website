@@ -24,12 +24,26 @@ const keyboards = [
     buildStyle: ["Gasket Mount", "80-84 Keys/75%"],
     configSoftware: "QKConfig",
     RGBSupport: "No",
-    imageData: {
+    explodedView: {
       url: "/interests/keyboards/QK75Exploded.png",
       alt: "Exploded view of the QK75 Keyboard",
     },
     imageOrientation: "vertical",
     groupBuy: "Yes",
+    displayPreview: [
+      {
+        url: "/interests/keyboards/QK75/QK75-1.jpg",
+        alt: "A left angle view of the QK75.",
+      },
+      {
+        url: "/interests/keyboards/QK75/QK75-2.jpg",
+        alt: "A top view of the QK75.",
+      },
+      {
+        url: "/interests/keyboards/QK75/QK75-3.jpg",
+        alt: "A right angle view of the QK75.",
+      },
+    ],
   },
   {
     name: "Zoom75",
@@ -61,12 +75,26 @@ const keyboards = [
     buildStyle: ["Gasket Mount", "80-84 Keys/75%"],
     configSoftware: "QMK/VIA",
     RGBSupport: "Yes",
-    imageData: {
+    explodedView: {
       url: "/interests/keyboards/Zoom75Exploded.png",
       alt: "Exploded view of the Zoom75 Keyboard",
     },
     imageOrientation: "horizontal",
     groupBuy: "Yes",
+    displayPreview: [
+      {
+        url: "/interests/keyboards/Zoom75/Zoom75-1.jpg",
+        alt: "A left angle view of the Zoom 75.",
+      },
+      {
+        url: "/interests/keyboards/Zoom75/Zoom75-2.jpg",
+        alt: "A top view of the Zoom 75.",
+      },
+      {
+        url: "/interests/keyboards/Zoom75/Zoom75-3.jpg",
+        alt: "A right angle view of the Zoom 75.",
+      },
+    ],
   },
   {
     name: "Keychron Q3",
@@ -92,12 +120,26 @@ const keyboards = [
     buildStyle: ["Double Gasket Mount", "88 Keys/80%/TKL"],
     configSoftware: "QMK/VIA",
     RGBSupport: "Yes",
-    imageData: {
+    explodedView: {
       url: "/interests/keyboards/KeychronQ3Exploded.png",
       alt: "Exploded view of the Keychron Q3 Keyboard",
     },
     imageOrientation: "horizontal",
     groupBuy: "No, but usually limited in stock",
+    displayPreview: [
+      {
+        url: "/interests/keyboards/KeychronQ3/KeychronQ3-1.jpg",
+        alt: "A left angle view of the Keychron Q3.",
+      },
+      {
+        url: "/interests/keyboards/KeychronQ3/KeychronQ3-2.jpg",
+        alt: "A top view of the Keychron Q3.",
+      },
+      {
+        url: "/interests/keyboards/KeychronQ3/KeychronQ3-3.jpg",
+        alt: "A right angle view of the Keychron Q3.",
+      },
+    ],
   },
 ];
 

@@ -5,7 +5,6 @@ import { KeyboardProps } from "@/types/type";
 import Link from "next/link";
 
 import { useState } from "react";
-import build from "next/dist/build";
 
 export default function KeyboardCard({ item, figNum }: KeyboardProps) {
   const [foamsOpened, setFoamsOpened] = useState(false);
@@ -24,11 +23,12 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
     RGBSupport,
     configSoftware,
     groupBuy,
-    imageData,
+    explodedView,
     imageOrientation,
+    displayPreview,
   } = item;
 
-  const { url, alt } = imageData;
+  const { url, alt } = explodedView;
   return (
     <div className="p-8 bg-white rounded-lg w-4/5">
       <div className="flex h-full items-center">
@@ -117,6 +117,22 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
             Figure {figNum}: Exploded view of the {name}
           </figcaption>
         </figure>
+      </div>
+      <div className="flex mt-6 gap-x-4">
+        {displayPreview.map((keyboard, index) => {
+          return (
+            <div key={index}>
+              <Image
+                className="rounded-xl w-full h-auto"
+                src={keyboard.url}
+                alt={keyboard.alt}
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

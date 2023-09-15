@@ -87,9 +87,10 @@ interface KeyboardProps {
     foams: string[];
     configSoftware: string;
     RGBSupport: string; // can be boolean
-    imageData: ImageData;
+    explodedView: ImageData;
     imageOrientation: string;
     groupBuy: string; // can be boolean
+    displayPreview: ImageData[];
   };
   figNum: number;
 }
