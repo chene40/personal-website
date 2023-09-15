@@ -106,7 +106,7 @@ interface ComputerProps {
     psu: string;
     partsList: string;
     blogPost: string;
-    description: string;
+    description: string[];
     imageData: ImageData;
   };
 }

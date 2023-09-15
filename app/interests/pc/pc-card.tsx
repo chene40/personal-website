@@ -72,10 +72,25 @@ export default function PCCard({ computer }: ComputerProps) {
           <div className="mt-2">
             <h2 className="text-2xl italic">Thoughts on Parts/Builds</h2>
             <hr className="h-0.5 bg-black my-2 mr-8" />
-            <p>{description}</p>
+            <div className="flex flex-col gap-y-4 mr-8">
+              {description.map((paragraph, index) => {
+                return (
+                  <p key={index} className="leading-relaxed">
+                    {paragraph}
+                  </p>
+                );
+              })}
+            </div>
           </div>
         </div>
-        <div className="flex justify-center rounded-lg">
+        <div className="flex flex-col gap-y-4 justify-center rounded-lg">
+          <Image
+            className="rounded-lg"
+            src={url}
+            alt={alt}
+            width={400}
+            height={100}
+          />
           <Image
             className="rounded-lg"
             src={url}
