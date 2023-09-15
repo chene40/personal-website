@@ -33,10 +33,16 @@ const computers = [
 	also provide better cooling (typically). I would have like to tidy things up a little more (like the cables), but in the end, I've decided that it could be something to work
 	on when I build my next setup.`,
     ],
-    imageData: {
-      url: "/interests/computer/PC1.jpg",
-      alt: "An image of my personal PC",
-    },
+    imageData: [
+      {
+        url: "/interests/computer/PC1-1.jpg",
+        alt: "An image of my personal PC",
+      },
+      {
+        url: "/interests/computer/PC1-2.jpg",
+        alt: "An image of my personal PC (close up angle)",
+      },
+    ],
   },
   {
     cpu: "AMD Ryzen 5 5600 3.5 GHz 6-Core Processor",
@@ -51,10 +57,16 @@ const computers = [
     partsList: "https://ca.pcpartpicker.com/user/Yericc98/saved/#view=q3DsK8",
     blogPost: "https://ca.pcpartpicker.com/b/d2ZZxr",
     description: ["Something from the blog"],
-    imageData: {
-      url: "/interests/computer/PC2.jpg",
-      alt: "An image of a PC that I built for my cousin",
-    },
+    imageData: [
+      {
+        url: "/interests/computer/PC2-1.jpg",
+        alt: "An image of a PC that I built for my cousin",
+      },
+      {
+        url: "/interests/computer/PC2-2.jpg",
+        alt: "An image of a PC that I built for my cousin (close up angle)",
+      },
+    ],
   },
 ];
 

@@ -21,8 +21,6 @@ export default function PCCard({ computer }: ComputerProps) {
     imageData,
   } = computer;
 
-  const { url, alt } = imageData;
-
   return (
     <div className="bg-white w-4/5 rounded-lg p-8">
       <div className="flex mb-8">
@@ -84,20 +82,18 @@ export default function PCCard({ computer }: ComputerProps) {
           </div>
         </div>
         <div className="flex flex-col gap-y-4 justify-center rounded-lg">
-          <Image
-            className="rounded-lg"
-            src={url}
-            alt={alt}
-            width={400}
-            height={100}
-          />
-          <Image
-            className="rounded-lg"
-            src={url}
-            alt={alt}
-            width={400}
-            height={100}
-          />
+          {imageData.map(({ url, alt }, index) => {
+            return (
+              <Image
+                key={index}
+                className="rounded-lg"
+                src={url}
+                alt={alt}
+                width={400}
+                height={100}
+              />
+            );
+          })}
         </div>
       </div>
       <div className="flex justify-evenly w-full h-16">

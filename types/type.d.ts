@@ -107,7 +107,7 @@ interface ComputerProps {
     partsList: string;
     blogPost: string;
     description: string[];
-    imageData: ImageData;
+    imageData: ImageData[];
   };
 }
 
