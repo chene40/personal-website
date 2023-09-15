@@ -94,6 +94,22 @@ interface KeyboardProps {
   figNum: number;
 }
 
+interface ComputerProps {
+  computer: {
+    cpu: string;
+    cpuCooler: string;
+    motherboard: string;
+    memory: string;
+    storage: string;
+    gpu: string;
+    pcCase: string;
+    psu: string;
+    partsList: string;
+    blogPost: string;
+    description: string;
+  };
+}
+
 export {
   ImageData,
   CompanyData,
@@ -103,4 +119,5 @@ export {
   InterestCardProps,
   ProfileTimelineProps,
   KeyboardProps,
+  ComputerProps,
 };

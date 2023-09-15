@@ -7,10 +7,11 @@ const computers = [
     storage:
       "Western Digital Blue SN570 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive",
     gpu: "MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card",
-    case: "Phanteks Eclipse G360A ATX Mid Tower Case",
+    pcCase: "Phanteks Eclipse G360A ATX Mid Tower Case",
     psu: "Thermaltake Smart 700 W 80+ Certified ATX Power Supply",
     partsList: "https://ca.pcpartpicker.com/user/Yericc98/saved/#view=DR7t3C",
     blogPost: "https://ca.pcpartpicker.com/b/gyZZxr",
+    description: "Something from the blog",
   },
   {
     cpu: "AMD Ryzen 5 5600 3.5 GHz 6-Core Processor",
@@ -20,10 +21,11 @@ const computers = [
     storage:
       "Western Digital Blue SN570 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive",
     gpu: "MSI MECH 2X OC Radeon RX 6650 XT 8 GB Video Card",
-    case: "NZXT H5 Flow RGB ATX Mid Tower Case",
+    pcCase: "NZXT H5 Flow RGB ATX Mid Tower Case",
     psu: "Thermaltake Smart BX1 650 650 W 80+ Bronze Certified ATX Power Supply",
     partsList: "https://ca.pcpartpicker.com/user/Yericc98/saved/#view=q3DsK8",
     blogPost: "https://ca.pcpartpicker.com/b/d2ZZxr",
+    description: "Something from the blog",
   },
 ];
 
