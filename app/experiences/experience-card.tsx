@@ -39,11 +39,11 @@ export default function ExperienceCard({
   return (
     <div className="h-full flex justify-center gap-x-8" id={idTag}>
       {position === "right" && (
-        <p className="w-1/3 mt-3 text-white text-end ">{date}</p>
+        <p className="w-1/3 mt-7 text-white text-end">{date}</p>
       )}
       {position === "right" && <Timeline />}
       <motion.div
-        className="bg-white h-full w-1/3 p-8 rounded-lg mb-12"
+        className="bg-white h-full w-1/3 p-8 rounded-lg mb-4 mt-4"
         ref={scope}
         initial={{ opacity: 0, x: position === "left" ? -100 : 100 }}
       >
@@ -78,7 +78,7 @@ export default function ExperienceCard({
         </div>
       </motion.div>
       {position === "left" && <Timeline />}
-      {position === "left" && <p className="w-1/3 mt-3 text-white">{date}</p>}
+      {position === "left" && <p className="w-1/3 mt-7 text-white">{date}</p>}
     </div>
   );
 }

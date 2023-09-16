@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Timeline() {
   return (
     <div className="w-10 flex justify-center relative">
-      <div className="absolute top-0 z-10 p-2 w-12 bg-white rounded-full">
+      <div className="absolute top-0 z-10 p-2 w-12 bg-white rounded-full mt-4">
         <Image
           src={"/misc/MapMarker.png"}
           alt="Navigation icon"
