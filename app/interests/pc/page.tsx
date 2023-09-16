@@ -13,7 +13,7 @@ export default function Alternatives() {
     <div className="h-screen flex flex-col">
       <Header />
       <div className="bg-gray-900 grow flex flex-col justify-center items-center">
-        <h1 className="text-4xl text-white my-8">
+        <h1 className="text-4xl text-white p-12">
           Welcome to My Assembled PC Section!
         </h1>
         <div className="w-full flex flex-col items-center gap-y-6 mb-8">

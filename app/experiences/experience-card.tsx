@@ -43,7 +43,7 @@ export default function ExperienceCard({
       )}
       {position === "right" && <Timeline />}
       <motion.div
-        className="bg-white h-full w-1/3 p-8 rounded-lg mb-8"
+        className="bg-white h-full w-1/3 p-8 rounded-lg mb-12"
         ref={scope}
         initial={{ opacity: 0, x: position === "left" ? -100 : 100 }}
       >

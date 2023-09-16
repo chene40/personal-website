@@ -2,6 +2,7 @@
 // Library/Module Imports
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 // Project Imports
 import { ProfileTimelineProps } from "@/types/type";
 
@@ -20,7 +21,7 @@ export default function HorizontalTimeline({
   const renderedEndIcon = endIcon ? endIcon : false;
 
   return (
-    <div className={`${renderedColor} w-1/5 h-2 relative`}>
+    <div className={`${renderedColor} w-1/5 h-2 relative text-white`}>
       <motion.div
         whileHover={{ scale: 1.35 }}
         className="-top-14 -left-28 absolute flex flex-col items-center"

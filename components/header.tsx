@@ -14,7 +14,7 @@ export default function Header() {
         </motion.div>
         <header className="flex justify-end space-x-10">
           <motion.div whileHover={{ scale: 1.2 }}>
-            <Link href="/about-me">About Me</Link>
+            <Link href="/projects">Projects</Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.2 }}>
             <Link href="/experiences">Experiences</Link>

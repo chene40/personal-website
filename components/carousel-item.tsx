@@ -1,6 +1,9 @@
+"use client";
+
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 // Project Imports
 import { CarouselItemProps } from "@/types/type";
@@ -63,20 +66,26 @@ export default function CarouselItem({ carouselItem }: CarouselItemProps) {
               );
             })}
           </div>
-          <div className="h-1/4 flex justify-evenly text-black">
+          <div className="h-1/4 flex justify-evenly text-white">
             <Link
               href={projectLink}
               target={projectLink === "/projects" ? "_self" : "_blank"}
               className="w-1/3"
             >
-              <button className="h-16 w-full flex justify-center items-center bg-emerald-200 active:bg-emerald-300 rounded-lg border-sky-300">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                className="h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300"
+              >
                 {button1 ? button1 : "Learn More About Project"}
-              </button>
+              </motion.button>
             </Link>
             <Link href={githubLink} target="_blank" className="w-1/3">
-              <button className="h-16 w-full flex justify-center items-center bg-red-200 active:bg-red-300 rounded-lg border-sky-300">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                className="h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300"
+              >
                 {button2 ? button2 : "View the Source Code"}
-              </button>
+              </motion.button>
             </Link>
           </div>
         </div>

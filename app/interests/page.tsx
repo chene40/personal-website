@@ -9,7 +9,7 @@ export default function Interests() {
     <div className="h-screen">
       <Header />
       <div className="bg-gray-900 w-full overflow-hidden">
-        <h2 className="p-8 text-3xl flex justify-center items-center text-white font-medium">
+        <h2 className="p-12 text-3xl flex justify-center items-center text-white font-medium">
           Check Out Some of My Interests Below!
         </h2>
         <div className="flex flex-col">

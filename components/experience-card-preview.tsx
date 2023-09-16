@@ -22,9 +22,9 @@ export default function ExperienceCardPreview({
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      className="bg-emerald-500 w-1/4 h-96 rounded-3xl flex flex-col"
+      className="bg-white w-1/4 h-96 rounded-3xl flex flex-col"
     >
-      <div className="bg-white h-1/5 rounded-t-3xl flex justify-between">
+      <div className="bg-emerald-300 h-1/5 rounded-t-3xl flex justify-between">
         <div className="p-4 w-2/3">
           <p>{company}</p>
           <p className="text-sm">{jobTitle}</p>
@@ -37,8 +37,8 @@ export default function ExperienceCardPreview({
           <Image src={url} alt={alt} width={90} height={80} />
         </Link>
       </div>
-      <p className="h-2/5 p-4 text-white grow">{description}</p>
-      <div className="h-1/6 flex items-center justify-center bg-gradient-to-r from-yellow-200 to-teal-400 ">
+      <p className="h-2/5 p-4 text-black grow">{description}</p>
+      <div className="h-1/6 flex items-center justify-center">
         {techStack!.map((icon, index) => {
           return (
             <Image
