@@ -26,10 +26,10 @@ export default function PCCard({ computer }: ComputerProps) {
 
   return (
     <div className="bg-white w-4/5 rounded-lg p-8">
-      <div className="flex mb-8">
-        <div className="w-3/4">
+      <div className="2xl:flex mb-8">
+        <div className="2xl:w-3/4">
           <h2 className="text-2xl italic">Specification</h2>
-          <hr className="h-0.5 bg-black my-2 mr-8" />
+          <hr className="h-0.5 bg-black my-2 2xl:mr-8" />
           <ul className="leading-relaxed">
             <li>
               <span className="font-semibold">
@@ -70,8 +70,8 @@ export default function PCCard({ computer }: ComputerProps) {
           </ul>
           <div className="mt-4">
             <h2 className="text-2xl italic">Thoughts on Parts/Builds</h2>
-            <hr className="h-0.5 bg-black my-2 mr-8" />
-            <div className="flex flex-col gap-y-4 mr-8">
+            <hr className="h-0.5 bg-black my-2 2xl:mr-8" />
+            <div className="flex flex-col gap-y-4 2xl:mr-8">
               {description.map((paragraph, index) => {
                 return (
                   <p key={index} className="leading-relaxed">
@@ -82,7 +82,7 @@ export default function PCCard({ computer }: ComputerProps) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-8 justify-center rounded-lg">
+        <div className="flex flex-col gap-y-8 justify-center rounded-lg mt-4 2xl:mt-0">
           {imageData.map(({ url, alt }, index) => {
             return (
               <motion.div key={index} whileHover={{ scale: 1.1 }}>
@@ -104,7 +104,7 @@ export default function PCCard({ computer }: ComputerProps) {
       <div className="flex justify-evenly w-full h-16">
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-1/4"
+          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-2/5 p-4 2xl:w-1/4"
         >
           <Link href={partsList} target="_blank">
             <button className="flex justify-center items-center h-full w-full text-white">
@@ -113,7 +113,7 @@ export default function PCCard({ computer }: ComputerProps) {
           </Link>
         </motion.div>
         <motion.div
-          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-1/4"
+          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-2/5 p-4 2xl:w-1/4"
           whileHover={{ scale: 1.1 }}
         >
           <Link href={blogPost} target="_blank">
