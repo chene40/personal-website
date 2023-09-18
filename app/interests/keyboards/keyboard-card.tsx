@@ -33,11 +33,11 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
   const { url, alt } = explodedView;
   return (
     <div className="p-8 bg-white rounded-lg w-4/5">
-      <div className="flex h-full items-center">
+      <div className="2xl:flex h-full items-center">
         <div
           className={`${
-            imageOrientation === "vertical" ? "w-3/4" : "w-3/5"
-          } mr-8 self-start`}
+            imageOrientation === "vertical" ? "2xl:w-3/4" : "w-3/5"
+          } mr-8 self-start w-full`}
         >
           <div>
             <h2 className="text-4xl">{`${name} - ${color}`}</h2>
@@ -50,11 +50,11 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
 
           <hr className="bg-black h-0.5 my-3" />
 
-          <div className="flex mb-2">
+          <div className="flex mb-2 gap-x-4">
             <div
               className={`${
-                imageOrientation === "vertical" ? "w-1/2" : "w-3/5"
-              }`}
+                imageOrientation === "vertical" ? "2xl:w-1/2" : "2xl:w-3/5"
+              } w-1/2`}
             >
               <p className="font-medium mb-2 italic">Finishing Components</p>
               <ul>
@@ -63,7 +63,7 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
                 })}
               </ul>
               <button
-                className="text-blue-900 italic ml-3 text-sm"
+                className="text-blue-900 italic ml-3 text-sm text-left"
                 onClick={() => setFoamsOpened(!foamsOpened)}
               >
                 {"What's included in all foams?"}
@@ -78,8 +78,8 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
             </div>
             <div
               className={`${
-                imageOrientation === "vertical" ? "w-1/2" : "w-2/5"
-              }`}
+                imageOrientation === "vertical" ? "2xl:w-1/2" : "2xl:w-2/5"
+              } w-1/2`}
             >
               <p className="font-medium mb-2 italic">Product Details</p>
               <ul>
@@ -105,8 +105,8 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
         </div>
         <figure
           className={`${
-            imageOrientation === "vertical" ? "w-1/4" : "w-2/5"
-          } h-full justify-center flex flex-col items-center gap-y-3`}
+            imageOrientation === "vertical" ? "2xl:w-1/4" : "2xl:w-2/5"
+          } h-full justify-center flex flex-col items-center gap-y-3 w-full mt-4 2xl:mt-0`}
         >
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link href={url} target="_blank">
@@ -125,7 +125,7 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
           </figcaption>
         </figure>
       </div>
-      <div className="flex mt-6 gap-x-8">
+      <div className="flex flex-col 2xl:flex-row mt-6 gap-x-8 gap-y-6">
         {displayPreview.map(({ url, alt }, index) => {
           return (
             <motion.div key={index} whileHover={{ scale: 1.1 }}>
