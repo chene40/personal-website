@@ -42,7 +42,7 @@ export default function Footer() {
           })}
         </ul>
         <hr className="h-1 w-4/5" />
-        <div className="flex flex-col gap-y-2 justify-center items-center my-8">
+        <div className="flex flex-col gap-y-2 justify-center items-center my-8 w-4/5 text-center gap-y-4">
           <p>
             {`Thanks for swinging by and checking out my webpage! I'd love to connect with you and have a chat ~`}
           </p>
