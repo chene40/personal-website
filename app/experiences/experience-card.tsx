@@ -14,6 +14,7 @@ import Timeline from "./timeline";
 export default function ExperienceCard({
   experience,
   position,
+  width,
 }: ExperienceCardProps) {
   const { companyData, tasks, imageData, idTag } = experience;
   const { company, jobTitle, description, date, companyLink } = companyData;
@@ -38,14 +39,25 @@ export default function ExperienceCard({
 
   return (
     <div className="h-full flex justify-center gap-x-8" id={idTag}>
-      {position === "right" && (
-        <p className="w-1/3 mt-7 text-white text-end">{date}</p>
+      {width >= 1280 && position === "right" && (
+        <>
+          <p className="w-1/3 mt-7 text-white text-end">{date}</p>
+          <Timeline />
+        </>
       )}
-      {position === "right" && <Timeline />}
+      {width < 1280 && (
+        <>
+          <p className="mt-7 text-white text-end">{date}</p>
+          <Timeline />
+        </>
+      )}
       <motion.div
-        className="bg-white h-full w-1/3 p-8 rounded-lg mb-4 mt-4"
+        className="bg-white h-full w-3/4 xl:w-1/3 p-8 rounded-lg mb-4 mt-4"
         ref={scope}
-        initial={{ opacity: 0, x: position === "left" ? -100 : 100 }}
+        initial={{
+          opacity: 0,
+          x: position === "left" && width >= 1280 ? -100 : 100,
+        }}
       >
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-medium">{company}</h3>
@@ -77,8 +89,12 @@ export default function ExperienceCard({
           </Link>
         </div>
       </motion.div>
-      {position === "left" && <Timeline />}
-      {position === "left" && <p className="w-1/3 mt-7 text-white">{date}</p>}
+      {width >= 1280 && position === "left" && (
+        <>
+          <Timeline />
+          <p className="w-1/3 mt-7 text-white">{date}</p>
+        </>
+      )}
     </div>
   );
 }

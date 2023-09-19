@@ -46,6 +46,7 @@ interface ExperienceCardProps {
     idTag: string;
   };
   position: string;
+  width: number;
 }
 
 // Interest Props
