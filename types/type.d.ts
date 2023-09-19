@@ -27,6 +27,7 @@ interface CarouselItemProps {
     button1?: string;
     button2?: string;
   };
+  width: number;
 }
 
 // Work Experience Type

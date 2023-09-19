@@ -13,6 +13,7 @@ import CarouselItem from "./carousel-item";
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [stopAutoPlay, setStopAutoPlay] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) setCurrentIndex(items.length - 1);
@@ -39,8 +40,18 @@ export default function Carousel() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, stopAutoPlay]);
 
+  useEffect(() => {
+    const changeHandler = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", changeHandler);
+
+    return () => {
+      window.removeEventListener("resize", changeHandler);
+    };
+  }, []);
+
   return (
-    <div className="h-[75vh] w-full flex flex-col items-center overflow-hidden bg-gray-900 relative">
+    <div className="h-full w-full flex flex-col items-center overflow-hidden bg-gray-900 relative">
       <div
         className="w-full h-full whitespace-nowrap inline-flex"
         style={{
@@ -49,7 +60,7 @@ export default function Carousel() {
         }}
       >
         {items.map((item, index) => {
-          return <CarouselItem carouselItem={item} key={index} />;
+          return <CarouselItem carouselItem={item} width={width} key={index} />;
         })}
       </div>
       <div className="z-10">
@@ -94,7 +105,7 @@ export default function Carousel() {
             );
           })}
         </div>
-        <label className="absolute bottom-4 right-24 inline-flex items-center cursor-pointer ">
+        <label className="absolute bottom-4 right-24 inline-flex items-center cursor-pointerS">
           <input
             type="checkbox"
             onClick={() => setStopAutoPlay(!stopAutoPlay)}
