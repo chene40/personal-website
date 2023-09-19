@@ -18,13 +18,15 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 
 ## Refinements
 - [X] Type Declaration and Consistency
-- [ ] Sticky Header
 - [X] Dynamic Routing to Specific Cards (Projects/Experiences)
 - [X] Vertical Timeline Progression (Experiences) + Fade Animations
 - [X] About Me Page RoadMap (Linear)
-- [ ] UI Consistency + Explore Styling
-- [ ] Retouch Routing
-- [ ] Refactor Shared Styles and Next.Js Layout Templates
+- [ ] Mobile Responsiveness
+- [ ] Refactor + Clean Up (This is if I'm very ambitious about keeping the codebase clean lool)
+-   [ ] Next.Js Layout Templates
+-   [ ] Updating Routing
+-   [ ] Global Styles
+-   [ ] Remove Unused CSS
 
 ## Page Data to Be Populated
 - [X] About Me
@@ -35,5 +37,5 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 - [X] Interests Detailed
 
 ## Additional Features/Extras
-- [ ] Transitions and Animations
-- [ ] Electro Cursor Navigation Integration
+- [X] Transitions and Animations
+- [ ] Cursor Follower Integration
