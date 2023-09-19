@@ -31,9 +31,9 @@ export default function Footer() {
                     alt={alt}
                     height={20}
                     width={20}
-                    className="h-12 w-12 rounded-lg left-4 absolute"
+                    className="h-12 xl:w-12 rounded-lg left-4 absolute w-auto h-auto"
                   />
-                  <p className="flex justify-center text-lg w-full">
+                  <p className="flex left-4 lg:left-0 absolute justify-center text-lg w-full">
                     {socialName}
                   </p>
                 </Link>
