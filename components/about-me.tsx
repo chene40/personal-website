@@ -4,13 +4,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 // Project Imports
 import timelineData from "@/data/timeline-data";
 import contactInfo from "@/data/contact-info";
 import HorizontalTimeline from "@/components/horizontal-timeline";
+import VerticalTimeline from "@/components/vertical-timeline";
 
 export default function AboutMePage() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const currentWidth = window.innerWidth;
+      setWidth(currentWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="bg-gray-900 w-full p-10">
       <div className="flex flex-col xl:flex-row justify-evenly items-center xl:items-start text-white">
@@ -78,11 +95,25 @@ export default function AboutMePage() {
           </div>
         </div>
       </div>
-      <div className="mt-24 mb-24 flex justify-center items-center h-full">
-        {timelineData.map((dataPoint, index) => {
-          return <HorizontalTimeline key={index} dataPoint={dataPoint} />;
-        })}
-      </div>
+      {/* Vertical */}
+      <h1 className="text-white text-3xl italic text-center">
+        Progress Timeline
+      </h1>
+
+      {width <= 1280 && (
+        <div className="flex flex-col justify-center items-center h-full">
+          {timelineData.map((dataPoint, index) => {
+            return <VerticalTimeline key={index} dataPoint={dataPoint} />;
+          })}
+        </div>
+      )}
+      {width > 1280 && (
+        <div className="my-24 flex justify-center items-center h-full">
+          {timelineData.map((dataPoint, index) => {
+            return <HorizontalTimeline key={index} dataPoint={dataPoint} />;
+          })}
+        </div>
+      )}
     </div>
   );
 }
