@@ -13,11 +13,11 @@ import HorizontalTimeline from "@/components/horizontal-timeline";
 export default function AboutMePage() {
   return (
     <div className="bg-gray-900 w-full p-10">
-      <div className="flex justify-evenly items-start text-white">
-        <div className="my-8 w-1/3 flex flex-col items-center">
+      <div className="flex flex-col xl:flex-row justify-evenly items-center xl:items-start text-white">
+        <div className="my-8 w-full md:w-1/2 xl:w-1/3 flex flex-col items-center">
           <motion.div
             whileHover={{ scale: 1.1 }}
-            className="w-2/3 w-2/3 bg-white rounded-full"
+            className="w-2/3 bg-white rounded-full"
           >
             <Image
               src={"/Me.jpg"}
@@ -28,7 +28,7 @@ export default function AboutMePage() {
               sizes="100vw"
             />
           </motion.div>
-          <div className="mt-12 h-12 flex justify-around items-center w-3/4">
+          <div className="mt-12 h-12 flex justify-around items-center w-full xl:w-3/4">
             {contactInfo.map((contact, index) => {
               return (
                 <motion.button
@@ -44,7 +44,7 @@ export default function AboutMePage() {
             })}
           </div>
         </div>
-        <div className="w-3/5">
+        <div className="xl:w-3/5">
           <h2 className="text-5xl my-8">Eric Chen</h2>
           <div className="flex flex-col gap-y-8 leading-relaxed text-lg w-11/12">
             <p>

@@ -22,9 +22,9 @@ export default function ExperienceCardPreview({
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      className="bg-white w-1/4 h-96 rounded-3xl flex flex-col"
+      className="bg-white w-full md:w-4/5 lg:w-2/5 2xl:w-1/4 h-full rounded-3xl flex flex-col"
     >
-      <div className="bg-emerald-300 h-1/5 rounded-t-3xl flex justify-between">
+      <div className="bg-emerald-300 h-2/12 2xl:h-1/5 rounded-t-3xl flex justify-between">
         <div className="p-4 w-2/3">
           <p>{company}</p>
           <p className="text-sm">{jobTitle}</p>
@@ -37,12 +37,11 @@ export default function ExperienceCardPreview({
           <Image src={url} alt={alt} width={90} height={80} />
         </Link>
       </div>
-      <p className="h-2/5 p-4 text-black grow">{description}</p>
-      <div className="h-1/6 flex items-center justify-center">
+      <p className="h-full p-4 text-black grow">{description}</p>
+      <div className="h-1/6 flex items-center justify-center mb-4 flex-wrap gap-x-4 gap-y-4 mx-4">
         {techStack!.map((icon, index) => {
           return (
             <Image
-              className="mr-2"
               src={icons[icon]}
               alt={icon}
               key={index}
@@ -54,7 +53,7 @@ export default function ExperienceCardPreview({
       </div>
       <Link
         href={`/experiences/#${idTag}`}
-        className="flex w-full h-1/6 rounded-b-3xl justify-center items-center bg-cyan-900 active:bg-cyan-950 text-white"
+        className="flex w-full h-16 rounded-b-3xl justify-center items-center bg-cyan-900 active:bg-cyan-950 text-white"
       >
         Learn More About This Position
       </Link>
