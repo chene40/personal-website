@@ -21,12 +21,12 @@ This was a project that I've been pushing off for over a year oops, but hopefull
 - [X] Dynamic Routing to Specific Cards (Projects/Experiences)
 - [X] Vertical Timeline Progression (Experiences) + Fade Animations
 - [X] About Me Page RoadMap (Linear)
-- [ ] Mobile Responsiveness
+- [X] Mobile Responsiveness
 - [ ] Refactor + Clean Up (This is if I'm very ambitious about keeping the codebase clean lool)
--   [ ] Next.Js Layout Templates
--   [ ] Updating Routing
--   [ ] Global Styles
--   [ ] Remove Unused CSS
+  - [ ] Next.Js Layout Templates
+  - [ ] Updating Routing
+  - [ ] Global Styles
+  - [ ] Remove Unused CSS
 
 ## Page Data to Be Populated
 - [X] About Me
