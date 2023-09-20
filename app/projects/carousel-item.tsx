@@ -34,7 +34,7 @@ export default function CarouselItem({
         <div className="flex h-24 items-center justify-between">
           <h3 className="text-3xl font-semibold">{title}</h3>
           <Image
-            className="invert"
+            className="invert w-36 h-full"
             src={url}
             alt={alt}
             width={100}

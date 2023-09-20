@@ -27,7 +27,7 @@ export default function ExperiencePreview() {
             return (
               <ExperienceCardPreview experience={experience} key={index} />
             );
-          })}{" "}
+          })}
         </motion.div>
       </div>
     </>

@@ -34,7 +34,13 @@ export default function ExperienceCardPreview({
           href={companyLink}
           className="w-1/3 flex justify-center"
         >
-          <Image src={url} alt={alt} width={90} height={80} />
+          <Image
+            src={url}
+            alt={alt}
+            width={90}
+            height={80}
+            className="w-24 h-auto"
+          />
         </Link>
       </div>
       <p className="h-full p-4 text-black grow">{description}</p>
