@@ -101,7 +101,7 @@ export default function Carousel() {
                   type="radio"
                   name="default-radio"
                   className="w-4 h-4"
-                  onClick={() => updateIndex(index)}
+                  onChange={() => updateIndex(index)}
                   checked={index === currentIndex ? true : false}
                 />
               </div>
