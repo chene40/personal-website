@@ -9,14 +9,18 @@ import { useEffect, useState } from "react";
 import ExperienceCard from "./experience-card";
 
 export default function Experiences() {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    const changeHandler = () => {
+    const handleResize = () => {
       setWidth(window.innerWidth);
     };
-    window.addEventListener("resize", changeHandler);
-    return () => window.removeEventListener("resize", changeHandler);
+
+    // Initial window width trigger since SSR does not provide a window object (client object)
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   });
   return (
     <div className="h-full overflow-hidden">

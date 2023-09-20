@@ -13,7 +13,7 @@ import CarouselItem from "./carousel-item";
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [stopAutoPlay, setStopAutoPlay] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) setCurrentIndex(items.length - 1);
@@ -41,12 +41,15 @@ export default function Carousel() {
   }, [currentIndex, stopAutoPlay]);
 
   useEffect(() => {
-    const changeHandler = () => setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
 
-    window.addEventListener("resize", changeHandler);
+    // Initial window width trigger since SSR does not provide a window object (client object)
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", changeHandler);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

@@ -13,13 +13,16 @@ import HorizontalTimeline from "@/components/horizontal-timeline";
 import VerticalTimeline from "@/components/vertical-timeline";
 
 export default function AboutMePage() {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
       const currentWidth = window.innerWidth;
       setWidth(currentWidth);
     };
+
+    // Initial window width trigger since SSR does not provide a window object (client object)
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
