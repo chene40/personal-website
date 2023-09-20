@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <div className="bg-gray-800 text-white">
       <div className="flex flex-col items-center">
-        <ul className="p-8 w-4/5 flex justify-between gap-x-12">
+        <ul className="p-8 w-4/5 flex flex-col sm:flex-row gap-y-6 justify-between gap-x-12">
           {contactInfo.map((contact, index) => {
             const { socialName, socialLink, imageData } = contact;
             const { url, alt } = imageData;
