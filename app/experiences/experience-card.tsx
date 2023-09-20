@@ -45,7 +45,7 @@ export default function ExperienceCard({
           <Timeline />
         </>
       )}
-      {width < 1280 && (
+      {width > 768 && width < 1280 && (
         <>
           <p className="mt-7 text-white text-end">{date}</p>
           <Timeline />
