@@ -13,18 +13,6 @@ const interests = [
     redirectPath: "/interests/keyboards",
   },
   {
-    interest: "Photography 📸",
-    description: `I've taken an interest to photography back in 2016 when my friend introduced it to me. Although it's been quite a few years 
-	since then, I've decided to relive this passion and see the world through a different lens. I can confidently say that I'm not the best at
-	photography haha - shaky hands and being color deficient does not really help ☹️. Editing images isn't my forte either sadly... Nonetheless,
-	exploring and snap shotting each moment in time places my mind in a state of tranquility. My personal favorite styles are portraits and bokehs!`,
-    imageData: {
-      url: "/interests/Camera.jpg",
-      alt: "An image of a DSLR (Canon EOS Rebel T8i) that I use to take pictures when I go exploring.",
-    },
-    redirectPath: "/interests/photography",
-  },
-  {
     interest: "PC Building 🖥️",
     description: `Not only do I love building custom keyboards, but the same goes for building PCs. In a way, both of them are like building
 	LEGO. You get all the pieces together and connect them with each other to make it work as a whole. When it comes to building PC, I really
@@ -35,6 +23,18 @@ const interests = [
       alt: "The inner parts of my PC build featuring the AIO/Radiator, motherboard, memory, GPU and some messy cables.",
     },
     redirectPath: "/interests/pc",
+  },
+  {
+    interest: "Photography 📸",
+    description: `I've taken an interest to photography back in 2016 when my friend introduced it to me. Although it's been quite a few years 
+	since then, I've decided to relive this passion and see the world through a different lens. I can confidently say that I'm not the best at
+	photography haha - shaky hands and being color deficient does not really help ☹️. Editing images isn't my forte either sadly... Nonetheless,
+	exploring and snap shotting each moment in time places my mind in a state of tranquility. My personal favorite styles are portraits and bokehs!`,
+    imageData: {
+      url: "/interests/Camera.jpg",
+      alt: "An image of a DSLR (Canon EOS Rebel T8i) that I use to take pictures when I go exploring.",
+    },
+    redirectPath: "/interests/photography",
   },
   {
     interest: "Games/Films/Books 🎮📺📚",
