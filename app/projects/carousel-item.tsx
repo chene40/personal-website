@@ -1,3 +1,4 @@
+"use client";
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,7 @@ import icons from "@/data/assets";
 export default function CarouselItem({
   carouselItem,
   width,
+  stopAnimationHandler,
 }: CarouselItemProps) {
   const {
     title,
@@ -101,7 +103,12 @@ export default function CarouselItem({
       </div>
       {width >= 1280 && (
         <div className="w-1/2 h-full flex flex-col justify-center items-center ml-12">
-          <video controls className="cursor-pointer rounded-xl" muted>
+          <video
+            controls
+            className="cursor-pointer rounded-xl"
+            muted
+            onPlay={() => stopAnimationHandler(true)}
+          >
             <source src={demoVideo} type="video/mp4" />
           </video>
         </div>

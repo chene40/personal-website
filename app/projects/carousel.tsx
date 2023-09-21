@@ -63,7 +63,14 @@ export default function Carousel() {
         }}
       >
         {items.map((item, index) => {
-          return <CarouselItem carouselItem={item} width={width} key={index} />;
+          return (
+            <CarouselItem
+              carouselItem={item}
+              width={width}
+              key={index}
+              stopAnimationHandler={setStopAutoPlay}
+            />
+          );
         })}
       </div>
       <div className="z-10">
@@ -110,7 +117,8 @@ export default function Carousel() {
         <label className="absolute bottom-10 right-6 md:bottom-4 md:right-24 inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
-            onClick={() => setStopAutoPlay(!stopAutoPlay)}
+            onChange={() => setStopAutoPlay(!stopAutoPlay)}
+            checked={stopAutoPlay}
             className="sr-only peer"
           />
           <div className="w-11 h-6 bg-red-400 rounded-full dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-400"></div>

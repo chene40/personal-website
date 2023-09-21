@@ -28,6 +28,7 @@ interface CarouselItemProps {
     button2?: string;
   };
   width: number;
+  stopAnimationHandler: Dispatch<SetStateAction<boolean>>;
 }
 
 // Work Experience Type
