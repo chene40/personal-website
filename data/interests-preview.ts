@@ -7,7 +7,7 @@ const interests = [
 	say you built your own keyboard which suits you specifically! Click the "Learn More" button to view my keyboard collection and see the
 	specifics details of each build ~`,
     imageData: {
-      url: "/interests/Qk75.jpg",
+      url: "/interests/QK75.jpg",
       alt: "An image of one of my favorite custom built mechanical keyboard. The milky white QK75 with osume's dalgona keycap + novelty set.",
     },
     redirectPath: "/interests/keyboards",

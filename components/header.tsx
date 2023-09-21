@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Header() {
   return (
     <div className="bg-gray-800">
-      <div className="flex text-white text-center overflow-x-scroll sm:overflow-hidden p-8">
+      <div className="flex justify-between text-white text-center overflow-x-scroll sm:overflow-hidden p-8">
         {/* Replace the header with an icon or something? */}
         <motion.div whileHover={{ scale: 1.2 }} className="mr-12">
           <Link href="/">Home</Link>
