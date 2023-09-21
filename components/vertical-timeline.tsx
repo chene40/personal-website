@@ -1,4 +1,3 @@
-"use client";
 // Library/Module Imports
 import Image from "next/image";
 import { motion } from "framer-motion";
