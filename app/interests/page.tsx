@@ -1,13 +1,10 @@
 // Project Imports
-import Header from "@/components/header";
 import InterestCard from "@/app/interests/interest-card";
 import interests from "@/data/interests-preview";
-import Footer from "@/components/footer";
 
 export default function Interests() {
   return (
-    <div className="h-screen">
-      <Header />
+    <div className="h-full">
       <div className="bg-gray-900 w-full overflow-hidden">
         <h2 className="p-12 text-3xl text-center text-white font-medium">
           Check Out Some of My Interests Below!
@@ -20,7 +17,6 @@ export default function Interests() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

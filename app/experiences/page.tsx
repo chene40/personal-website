@@ -1,7 +1,5 @@
 "use client";
 // Project Imports
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import experiencesFull from "@/data/experiences-full";
 import { useEffect, useState } from "react";
 
@@ -24,7 +22,6 @@ export default function Experiences() {
   });
   return (
     <div className="h-full overflow-hidden">
-      <Header />
       <div className="bg-gray-900 h-full pb-6">
         <h3 className="flex justify-center font-medium text-3xl p-12 text-white">
           Work Experiences
@@ -42,7 +39,6 @@ export default function Experiences() {
           })}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

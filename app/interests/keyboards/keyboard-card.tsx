@@ -5,7 +5,6 @@ import Image from "next/image";
 import { KeyboardProps } from "@/types/type";
 import Link from "next/link";
 import { useState } from "react";
-
 import { motion } from "framer-motion";
 
 export default function KeyboardCard({ item, figNum }: KeyboardProps) {
