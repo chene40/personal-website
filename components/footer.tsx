@@ -31,9 +31,9 @@ export default function Footer() {
                     alt={alt}
                     height={20}
                     width={20}
-                    className="h-12 xl:w-12 rounded-lg left-4 absolute w-auto h-auto"
+                    className="rounded-lg left-4 absolute w-auto h-auto"
                   />
-                  <p className="flex left-4 lg:left-0 absolute justify-center text-lg w-full">
+                  <p className="flex justify-center left-4 absolute text-lg w-full lg:left-0">
                     {socialName}
                   </p>
                 </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
           })}
         </ul>
         <hr className="h-1 w-4/5" />
-        <div className="flex flex-col gap-y-2 justify-center items-center my-8 w-4/5 text-center gap-y-4">
+        <div className="flex flex-col justify-center items-center my-8 w-4/5 text-center gap-y-4">
           <p>
             {`Thanks for swinging by and checking out my webpage! I'd love to connect with you and have a chat ~`}
           </p>

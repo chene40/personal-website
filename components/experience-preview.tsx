@@ -1,8 +1,8 @@
 "use client";
 // Project Imports
 import { experiencesTop, experiencesBottom } from "@/data/experiences-preview";
-
 import { motion } from "framer-motion";
+
 // Relative/Local Imports
 import ExperienceCardPreview from "./experience-card-preview";
 

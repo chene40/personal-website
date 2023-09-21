@@ -26,7 +26,7 @@ export default function PCCard({ computer }: ComputerProps) {
 
   return (
     <div className="bg-white w-4/5 rounded-lg p-8">
-      <div className="2xl:flex mb-8">
+      <div className="mb-8 2xl:flex">
         <div className="2xl:w-3/4">
           <h2 className="text-2xl italic">Specification</h2>
           <hr className="h-0.5 bg-black my-2 2xl:mr-8" />

@@ -34,7 +34,7 @@ export default function AboutMePage() {
   return (
     <div className="bg-gray-900 w-full p-10">
       <div className="flex flex-col xl:flex-row justify-evenly items-center xl:items-start text-white">
-        <div className="my-8 w-full md:w-2/3 xl:w-1/3 flex flex-col items-center">
+        <div className="my-8 w-full flex flex-col items-center md:w-2/3 xl:w-1/3">
           <motion.div
             whileHover={{ scale: 1.1 }}
             className="w-2/3 bg-white rounded-full"
@@ -66,7 +66,7 @@ export default function AboutMePage() {
         </div>
         <div className="xl:w-3/5">
           <h2 className="text-5xl my-8">Eric Chen</h2>
-          <div className="flex flex-col gap-y-8 leading-relaxed text-lg w-full xl:w-11/12">
+          <div className="flex flex-col gap-y-8 leading-relaxed w-full lg:text-lg xl:w-11/12">
             <p>
               {` Hi there! My name's Eric, and I'm currently a fourth-year
 			software engineering student at McMaster University, passionate

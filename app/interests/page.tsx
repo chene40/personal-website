@@ -5,7 +5,7 @@ import interests from "@/data/interests-preview";
 export default function Interests() {
   return (
     <div className="h-full">
-      <div className="bg-gray-900 w-full overflow-hidden">
+      <div className="bg-gray-900 w-full">
         <h2 className="p-12 text-3xl text-center text-white font-medium">
           Check Out Some of My Interests Below!
         </h2>

@@ -21,8 +21,8 @@ export default function Experiences() {
     return () => window.removeEventListener("resize", handleResize);
   });
   return (
-    <div className="h-full overflow-hidden">
-      <div className="bg-gray-900 h-full pb-6">
+    <div className="h-full">
+      <div className="bg-gray-900 pb-6">
         <h3 className="flex justify-center font-medium text-3xl p-12 text-white">
           Work Experiences
         </h3>

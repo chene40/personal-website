@@ -8,7 +8,7 @@ import PCCard from "./pc-card";
 export default function Alternatives() {
   return (
     <div className="h-full flex flex-col">
-      <div className="bg-gray-900 grow flex flex-col justify-center items-center">
+      <div className="bg-gray-900 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-white p-12 text-center">
           Welcome to My Assembled PC Section!
         </h1>

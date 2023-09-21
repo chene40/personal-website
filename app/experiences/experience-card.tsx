@@ -52,11 +52,11 @@ export default function ExperienceCard({
         </>
       )}
       <motion.div
-        className="bg-white h-full w-3/4 xl:w-1/3 p-8 rounded-lg mb-4 mt-4"
+        className="bg-white w-3/4 p-8 rounded-lg my-4 xl:w-1/3"
         ref={scope}
         initial={{
           opacity: 0,
-          x: position === "left" && width >= 1280 ? -100 : 100,
+          x: position === "left" || width < 1280 ? -100 : 100,
         }}
       >
         <div className="flex justify-between items-center">

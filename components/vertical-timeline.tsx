@@ -18,7 +18,11 @@ export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
   const renderedEndIcon = endIcon ? endIcon : false;
 
   return (
-    <div className={`text-white w-full ${renderedEndIcon ? "h-96" : "h-48"}`}>
+    <div
+      className={`text-white w-full ${
+        renderedEndIcon ? "h-96" : "h-48"
+      } lg:text-lg`}
+    >
       <div
         className={`flex justify-evenly items-center ${
           renderedEndIcon ? "h-1/2" : "h-full"

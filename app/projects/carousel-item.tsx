@@ -28,11 +28,11 @@ export default function CarouselItem({
 
   return (
     <div className="h-full w-full shrink-0 py-8 px-24 flex text-white items-center">
-      <div className="xl:w-1/2 flex flex-col h-full">
-        <div className="flex h-24 items-center justify-between">
+      <div className="flex flex-col h-full xl:w-1/2">
+        <div className="flex flex-col sm:flex-row h-full items-center justify-between ">
           <h3 className="text-3xl font-semibold">{title}</h3>
           <Image
-            className="invert w-36 h-full"
+            className="invert w-36 h-full py-2"
             src={url}
             alt={alt}
             width={100}
@@ -40,20 +40,20 @@ export default function CarouselItem({
           />
         </div>
         <hr className="bg-black h-0.5" />
-        <div className="xl:h-[50vh] flex flex-col items-center py-8">
+        <div className="flex flex-col items-center py-8 xl:h-[50vh]">
           <p
             className={`h-full ${
               additionalInfo ? "2xl:h-1/4" : "2xl:h-1/2"
-            } whitespace-normal text-lg`}
+            } whitespace-normal`}
           >
             {description}
           </p>
           {additionalInfo && (
-            <p className="h-full 2xl:h-1/4 pt-6 whitespace-normal text-lg">
+            <p className="h-full pt-6 whitespace-normal 2xl:h-1/4">
               {additionalInfo}
             </p>
           )}
-          <div className="h-1/6 flex items-center justify-center my-8 flex-wrap gap-y-12">
+          <div className="h-1/6 flex flex-wrap justify-center items-center my-8 gap-y-12">
             {techStack.map((item: string, index: number) => {
               return (
                 <Image
@@ -75,7 +75,7 @@ export default function CarouselItem({
               </video>
             </div>
           )}
-          <div className="h-1/5 flex-wrap gap-y-8 flex justify-evenly items-end text-white w-full">
+          <div className="h-1/5 flex justify-evenly items-end flex-wrap gap-y-8 text-white w-full">
             <Link
               href={projectLink}
               target={projectLink === "/projects" ? "_self" : "_blank"}
@@ -83,7 +83,7 @@ export default function CarouselItem({
             >
               <motion.button
                 whileHover={{ scale: 1.1 }}
-                className="h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
+                className="h-20 sm:h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
               >
                 {button1 ? button1 : "Learn More About Project"}
               </motion.button>
@@ -91,7 +91,7 @@ export default function CarouselItem({
             <Link href={githubLink} target="_blank" className="w-2/5 2xl:w-1/3">
               <motion.button
                 whileHover={{ scale: 1.1 }}
-                className="h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
+                className="h-20 sm:h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
               >
                 {button2 ? button2 : "View the Source Code"}
               </motion.button>

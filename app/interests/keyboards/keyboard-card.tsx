@@ -34,9 +34,9 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
     <div className="p-8 bg-white rounded-lg w-4/5">
       <div className="2xl:flex h-full items-center">
         <div
-          className={`${
+          className={` w-full ${
             imageOrientation === "vertical" ? "2xl:w-3/4" : "w-3/5"
-          } mr-8 self-start w-full`}
+          } mr-8 self-start`}
         >
           <div>
             <h2 className="text-4xl">{`${name} - ${color}`}</h2>
@@ -76,9 +76,9 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
               )}
             </div>
             <div
-              className={`${
+              className={`w-1/2 ${
                 imageOrientation === "vertical" ? "2xl:w-1/2" : "2xl:w-2/5"
-              } w-1/2`}
+              }`}
             >
               <p className="font-medium mb-2 italic">Product Details</p>
               <ul>
@@ -105,7 +105,7 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
         <figure
           className={`${
             imageOrientation === "vertical" ? "2xl:w-1/4" : "2xl:w-2/5"
-          } h-full justify-center flex flex-col items-center gap-y-3 w-full mt-4 2xl:mt-0`}
+          } flex flex-col justify-center items-center gap-y-3 mt-4 2xl:mt-0`}
         >
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link href={url} target="_blank">
