@@ -9,7 +9,7 @@ import ExperienceCardPreview from "./experience-card-preview";
 export default function ExperiencePreview() {
   return (
     <>
-      <div className="bg-gray-900 p-8">
+      <div className="bg-gray-900 p-6">
         <h2 className="flex justify-center mb-10 text-3xl text-white text-center">
           {"Here's a preview of some of my work experiences ~"}
         </h2>
