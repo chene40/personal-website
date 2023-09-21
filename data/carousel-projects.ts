@@ -88,11 +88,11 @@ const carouselProjects = [
       "tailwindcss",
       "vercel",
     ],
-    projectLink: "/projects",
+    projectLink: "/",
     githubLink: "https://github.com/chene40/personal-website",
     demoVideo:
-      "https://github.com/chene40/Tenzies/assets/97481912/20395cd0-009d-4a2e-a6d4-f64881272a29",
-    button1: "Learn More About Projects",
+      "https://github.com/chene40/personal-website/assets/97481912/cfadf25d-205f-44c2-acd6-3bb329e1f2a7",
+    button1: "Start Exploring (Home Page)",
   },
 ];
 
