@@ -25,7 +25,7 @@ export default function PCCard({ computer }: ComputerProps) {
   } = computer;
 
   return (
-    <div className="bg-white w-4/5 rounded-lg p-8">
+    <div className="bg-white w-10/12 rounded-lg p-8">
       <div className="mb-8 2xl:flex">
         <div className="2xl:w-3/4">
           <h2 className="text-2xl italic">Specification</h2>
@@ -101,10 +101,10 @@ export default function PCCard({ computer }: ComputerProps) {
           })}
         </div>
       </div>
-      <div className="flex justify-evenly w-full h-16">
+      <div className="flex flex-wrap justify-evenly w-full h-full gap-y-4 sm:h-16 sm:mb-4 md:mb-0">
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-2/5 p-4 2xl:w-1/4"
+          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-full sm:w-2/5 p-4 2xl:w-1/4"
         >
           <Link href={partsList} target="_blank">
             <button className="flex justify-center items-center h-full w-full text-white">
@@ -113,7 +113,7 @@ export default function PCCard({ computer }: ComputerProps) {
           </Link>
         </motion.div>
         <motion.div
-          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-2/5 p-4 2xl:w-1/4"
+          className="bg-cyan-600 active:bg-cyan-700 rounded-lg w-full sm:w-2/5 p-4 2xl:w-1/4"
           whileHover={{ scale: 1.1 }}
         >
           <Link href={blogPost} target="_blank">

@@ -52,7 +52,7 @@ export default function ExperienceCard({
         </>
       )}
       <motion.div
-        className="bg-white w-3/4 p-8 rounded-lg my-4 xl:w-1/3"
+        className="bg-white w-10/12 sm:w-3/4 p-8 rounded-lg my-4 xl:w-1/3"
         ref={scope}
         initial={{
           opacity: 0,
@@ -89,7 +89,7 @@ export default function ExperienceCard({
             href={companyLink}
             className="w-full flex justify-center items-center"
           >
-            <button className="bg-blue-200 w-2/5 h-12 rounded-xl">
+            <button className="bg-blue-200 w-3/5 md:w-2/5 h-12 rounded-xl">
               Learn More!
             </button>
           </Link>

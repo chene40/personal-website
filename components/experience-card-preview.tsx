@@ -1,7 +1,7 @@
 // Library/Module Imports
 import Image from "next/image";
 import Link from "next/link";
-
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 // Project Imports
@@ -11,6 +11,12 @@ import icons from "@/data/assets";
 export default function ExperienceCardPreview({
   experience,
 }: ExperienceCardPreviewProps) {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   const { companyData, imageData, idTag } = experience;
 
   const { company, jobTitle, description, techStack, companyLink } =
@@ -19,7 +25,7 @@ export default function ExperienceCardPreview({
 
   return (
     <motion.div
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: width > 1568 ? 1.1 : 1 }}
       className="bg-white w-full h-full rounded-3xl flex flex-col md:w-4/5 lg:w-2/5 2xl:w-1/4"
     >
       <div className="bg-emerald-300 h-2/12 rounded-t-3xl flex justify-between 2xl:h-1/5">

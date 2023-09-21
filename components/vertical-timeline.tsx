@@ -19,7 +19,7 @@ export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
 
   return (
     <div
-      className={`text-white w-full ${
+      className={`text-white text-sm sm:text-base w-full ${
         renderedEndIcon ? "h-96" : "h-48"
       } lg:text-lg`}
     >
@@ -28,7 +28,7 @@ export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
           renderedEndIcon ? "h-1/2" : "h-full"
         }`}
       >
-        <p className="w-2/5 whitespace-normal text-center">{date}</p>
+        <p className="w-2/5 px-6 whitespace-normal text-center">{date}</p>
         <div className="w-16 h-16 flex justify-center items-center relative">
           <motion.div
             whileHover={{ scale: 1.35 }}
@@ -44,11 +44,11 @@ export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
           </motion.div>
           <div className={`w-2 h-48 ${renderedColor} absolute top-0`} />
         </div>
-        <p className="w-2/5 whitespace-normal text-center px-12">{role}</p>
+        <p className="w-2/5 whitespace-normal text-center pl-6">{role}</p>
       </div>
       {renderedEndIcon && (
         <div className="flex justify-evenly items-center h-1/2">
-          <p className="w-2/5 whitespace-normal text-center">
+          <p className="w-2/5 px-6 whitespace-normal text-center">
             {renderedEndIcon.date}
           </p>
           <div className="w-16 h-16 flex justify-center items-center relative">
@@ -65,7 +65,7 @@ export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
               />
             </motion.div>
           </div>
-          <p className="w-2/5 whitespace-normal text-center px-12">
+          <p className="w-2/5 whitespace-normal pl-6 text-center">
             {renderedEndIcon.role}
           </p>
         </div>

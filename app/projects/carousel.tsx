@@ -75,7 +75,7 @@ export default function Carousel() {
       </div>
       <div className="z-10">
         <button
-          className="absolute left-8 top-1/2"
+          className={`absolute left-8 ${width < 640 ? "top-20" : "top-1/2"}`}
           onClick={() => updateIndex(currentIndex - 1)}
         >
           <Image
@@ -87,7 +87,7 @@ export default function Carousel() {
           />
         </button>
         <button
-          className="absolute right-8 top-1/2"
+          className={`absolute right-8 ${width < 640 ? "top-20" : "top-1/2"}`}
           onClick={() => updateIndex(currentIndex + 1)}
         >
           <Image
@@ -114,7 +114,7 @@ export default function Carousel() {
             );
           })}
         </div>
-        <label className="absolute bottom-10 right-6 md:bottom-4 md:right-24 inline-flex items-center cursor-pointer">
+        <label className="absolute bottom-16 right-6 md:bottom-4 md:right-24 inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
             onChange={() => setStopAutoPlay(!stopAutoPlay)}

@@ -29,12 +29,12 @@ export default function CarouselItem({
   const { url, alt } = imageData;
 
   return (
-    <div className="h-full w-full shrink-0 py-8 px-24 flex text-white items-center">
+    <div className="h-full w-full shrink-0 py-8 px-12 sm:px-24 flex text-white items-center">
       <div className="flex flex-col h-full xl:w-1/2">
-        <div className="flex flex-col sm:flex-row h-full items-center justify-between ">
+        <div className="flex flex-col sm:flex-row h-full items-center justify-between">
           <h3 className="text-3xl font-semibold">{title}</h3>
           <Image
-            className="invert w-36 h-full py-2"
+            className="invert w-36 h-full py-4"
             src={url}
             alt={alt}
             width={100}
@@ -77,23 +77,27 @@ export default function CarouselItem({
               </video>
             </div>
           )}
-          <div className="h-1/5 flex justify-evenly items-end flex-wrap gap-y-8 text-white w-full">
+          <div className="h-1/5 flex justify-evenly items-end flex-wrap gap-y-8 text-white w-full ">
             <Link
               href={projectLink}
               target={projectLink === "/projects" ? "_self" : "_blank"}
-              className="w-2/5 2xl:w-1/3"
+              className="w-full sm:w-2/5 2xl:w-1/3"
             >
               <motion.button
                 whileHover={{ scale: 1.1 }}
-                className="h-20 sm:h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
+                className="h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
               >
                 {button1 ? button1 : "Learn More About Project"}
               </motion.button>
             </Link>
-            <Link href={githubLink} target="_blank" className="w-2/5 2xl:w-1/3">
+            <Link
+              href={githubLink}
+              target="_blank"
+              className="w-full sm:w-2/5 2xl:w-1/3"
+            >
               <motion.button
                 whileHover={{ scale: 1.1 }}
-                className="h-20 sm:h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
+                className="h-16 w-full flex justify-center items-center bg-gray-700 active:bg-gray-800 rounded-lg border-sky-300 whitespace-normal p-2"
               >
                 {button2 ? button2 : "View the Source Code"}
               </motion.button>

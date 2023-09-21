@@ -3,11 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 // Project Imports
 import contactInfo from "@/data/contact-info";
 
 export default function Footer() {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+  
   return (
     <div className="bg-gray-800 text-white">
       <div className="flex flex-col items-center">
@@ -17,7 +24,7 @@ export default function Footer() {
             const { url, alt } = imageData;
             return (
               <motion.li
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: width > 1568 ? 1.1 : 1 }}
                 key={index}
                 className="w-full rounded-xl bg-cyan-600 active:bg-cyan-700"
               >

@@ -10,7 +10,7 @@ export default function ExperiencePreview() {
   return (
     <>
       <div className="bg-gray-900 p-8">
-        <h2 className="flex justify-center mb-10 text-3xl text-white text-center px-8">
+        <h2 className="flex justify-center mb-10 text-3xl text-white text-center">
           {"Here's a preview of some of my work experiences ~"}
         </h2>
         <motion.div

@@ -31,7 +31,7 @@ export default function KeyboardCard({ item, figNum }: KeyboardProps) {
 
   const { url, alt } = explodedView;
   return (
-    <div className="p-8 bg-white rounded-lg w-4/5">
+    <div className="p-8 bg-white rounded-lg w-10/12">
       <div className="2xl:flex h-full items-center">
         <div
           className={` w-full ${

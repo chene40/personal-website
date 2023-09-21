@@ -48,12 +48,12 @@ export default function AboutMePage() {
               sizes="100vw"
             />
           </motion.div>
-          <div className="mt-12 h-12 flex justify-around items-center w-full xl:w-3/4">
+          <div className="mt-12 h-12 flex justify-around items-center gap-x-4 w-full xl:w-3/4">
             {contactInfo.map((contact, index) => {
               return (
                 <motion.button
                   key={index}
-                  className="border p-2 rounded-lg w-1/4"
+                  className="border p-2 rounded-lg w-1/3"
                   whileHover={{ scale: 1.25 }}
                 >
                   <Link target="_blank" href={contact.socialLink}>
