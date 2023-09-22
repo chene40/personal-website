@@ -66,7 +66,7 @@ interface ProfileTimelineProps {
   dataPoint: {
     date: string;
     role: string;
-    color?: string;
+    incomplete?: boolean;
     imageData?: ImageData;
     endIcon?: {
       imageData: ImageData;

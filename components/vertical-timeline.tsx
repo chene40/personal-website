@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 import { ProfileTimelineProps } from "@/types/type";
 
 export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
-  const { date, role, color, imageData, endIcon } = dataPoint;
+  const { date, role, incomplete, imageData, endIcon } = dataPoint;
 
-  const renderedColor = color ? color : "bg-blue-200";
   const renderedIcon = imageData
     ? imageData
     : {
@@ -42,7 +41,11 @@ export default function VerticalTimeline({ dataPoint }: ProfileTimelineProps) {
               className="rounded-full bg-white z-10"
             />
           </motion.div>
-          <div className={`w-2 h-48 ${renderedColor} absolute top-0`} />
+          <div
+            className={`w-2 h-48 ${
+              incomplete ? "bg-red-200" : "bg-blue-200"
+            }  absolute top-0`}
+          />
         </div>
         <p className="w-2/5 whitespace-normal text-center pl-6">{role}</p>
       </div>

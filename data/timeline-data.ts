@@ -30,7 +30,7 @@ const timelineData = [
       url: "/misc/GraduationHat.png",
       alt: "A pixelated icon of a graduation hat",
     },
-    color: "bg-red-200",
+    incomplete: true,
     endIcon: {
       date: "May 2025",
       role: "Full Time Employment",

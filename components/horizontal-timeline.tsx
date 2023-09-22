@@ -8,9 +8,8 @@ import { ProfileTimelineProps } from "@/types/type";
 export default function HorizontalTimeline({
   dataPoint,
 }: ProfileTimelineProps) {
-  const { date, role, color, imageData, endIcon } = dataPoint;
+  const { date, role, incomplete, imageData, endIcon } = dataPoint;
 
-  const renderedColor = color ? color : "bg-blue-200";
   const renderedIcon = imageData
     ? imageData
     : {
@@ -20,7 +19,11 @@ export default function HorizontalTimeline({
   const renderedEndIcon = endIcon ? endIcon : false;
 
   return (
-    <div className={`${renderedColor} w-1/5 h-2 relative text-white`}>
+    <div
+      className={`${
+        incomplete ? "bg-red-200" : "bg-blue-200"
+      } w-1/5 h-2 relative text-white`}
+    >
       <motion.div
         whileHover={{ scale: 1.35 }}
         className="-top-14 -left-28 absolute flex flex-col items-center"
