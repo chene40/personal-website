@@ -9,6 +9,7 @@ import items from "@/data/carousel-projects";
 
 // Relative/Local Imports
 import CarouselItem from "./carousel-item";
+import { start } from "repl";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,15 +31,26 @@ export default function Carousel() {
   const handleTouchEnd: TouchEventHandler = (e) => {
     if (!startX || !endX) return;
 
-    const diffX = startX - endX;
+    const selection = window.getSelection();
 
-    if (diffX > 0) {
-      updateIndex(currentIndex + 1);
-    } else if (diffX < 0) {
-      updateIndex(currentIndex - 1);
+    if (selection && selection.toString() !== "") {
+      // Text has been selected, do not invoke a transition
+      setStartX(null);
+      setEndX(null);
+      setStopAutoPlay(true);
+      return;
     }
 
-    setStopAutoPlay(true);
+    const diffX = startX - endX;
+
+    if (diffX > 75) {
+      updateIndex(currentIndex + 1);
+      setStopAutoPlay(true);
+    } else if (diffX < -75) {
+      updateIndex(currentIndex - 1);
+      setStopAutoPlay(true);
+    }
+
     setStartX(null);
     setEndX(null);
   };
