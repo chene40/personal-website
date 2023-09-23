@@ -59,7 +59,7 @@ const carouselProjects = [
     description: `A recreation of the classical game, Tenzies. Roll until all die are the same and click each die to freeze
 	  its current value between rolls. Try to beat your record and see if you can achieve a faster time than before.
 	  All relevant data pertaining to the game are stored via local storage and you can check if 
-	  you've beaten your old record via the "Stats" page.`,
+	  you've beaten your old record via the "Stats" page. Check the demo video out for a quick run through of the game!`,
     additionalInfo: `This project was created as an initial dive into the React/Node ecosystem and was deployed via Vercel. For additional 
 	information regarding implementation specifics, click the "View the Source Code" button below.`,
     techStack: ["html", "css", "javascript", "react", "vercel"],
@@ -78,6 +78,10 @@ const carouselProjects = [
     description: `The website that you're currently looking at right now is also a personal project that I've created to get to 
 	  know me better. In here, you will find my some of the work I've done, my experiences with software engineering/development, 
 	  and some of my interests. Feel free to take a browse around and see if anything piques your interest!`,
+    additionalInfo: `This project was developed using the front-end tech stacks/tools I've utilized throughout my internship experiences. 
+	  It was developed via Next.js, a framework built on top of React that provides server side rendering (SSR) and an intuitive file-system
+	  based router. TypeScript was used to assist with the development process for its static type checking and Tailwind
+	  as the primary utility CSS library in helping to offset page load speed. This project was deployed via Vercel.`,
     techStack: [
       "html",
       "css",
