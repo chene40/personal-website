@@ -42,18 +42,10 @@ export default function CarouselItem({
           />
         </div>
         <hr className="bg-black h-0.5" />
-        <div className="flex flex-col items-center py-8 xl:h-[50vh]">
-          <p
-            className={`h-full ${
-              additionalInfo ? "2xl:h-1/4" : "2xl:h-1/2"
-            } whitespace-normal`}
-          >
-            {description}
-          </p>
+        <div className="flex flex-col items-center py-8">
+          <p className={`h-full whitespace-normal`}>{description}</p>
           {additionalInfo && (
-            <p className="h-full pt-6 whitespace-normal 2xl:h-1/4">
-              {additionalInfo}
-            </p>
+            <p className="h-full pt-6 whitespace-normal">{additionalInfo}</p>
           )}
           <div className="h-1/6 flex flex-wrap justify-center items-center my-8 gap-y-12">
             {techStack.map((item: string, index: number) => {
