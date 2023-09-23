@@ -2,7 +2,7 @@
 
 // Library/Module Imports
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { TouchEventHandler, useEffect, useState } from "react";
 
 // Project Imports
 import items from "@/data/carousel-projects";
@@ -14,6 +14,34 @@ export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [stopAutoPlay, setStopAutoPlay] = useState(false);
   const [width, setWidth] = useState(0);
+
+  const [startX, setStartX] = useState<null | number>(null);
+  const [endX, setEndX] = useState<null | number>(null);
+
+  const handleTouchStart: TouchEventHandler = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove: TouchEventHandler = (e) => {
+    const currentX = e.touches[0].clientX;
+    setEndX(currentX);
+  };
+
+  const handleTouchEnd: TouchEventHandler = (e) => {
+    if (!startX || !endX) return;
+
+    const diffX = startX - endX;
+
+    if (diffX > 0) {
+      updateIndex(currentIndex + 1);
+    } else if (diffX < 0) {
+      updateIndex(currentIndex - 1);
+    }
+
+    setStopAutoPlay(true);
+    setStartX(null);
+    setEndX(null);
+  };
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) setCurrentIndex(items.length - 1);
@@ -54,7 +82,12 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="h-full w-full flex flex-col items-center overflow-hidden bg-gray-900 relative">
+    <div
+      className="h-full w-full flex flex-col items-center overflow-hidden bg-gray-900 relative"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div
         className="w-full h-full whitespace-nowrap inline-flex"
         style={{
