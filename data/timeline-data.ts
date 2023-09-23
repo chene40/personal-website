@@ -28,7 +28,7 @@ const timelineData = [
     role: "McMaster University Anticipated Graduation",
     imageData: {
       url: "/misc/GraduationHat.png",
-      alt: "A pixelated icon of a graduation hat",
+      alt: "A pixelated icon of a gradua tion hat",
     },
     incomplete: true,
     endIcon: {
